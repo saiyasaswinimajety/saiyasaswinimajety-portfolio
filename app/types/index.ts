@@ -42,6 +42,7 @@ export interface Recognition {
   name: string;
   title: string;
   avatar?: string;
+  logo?: string;
   quote: string;
   image?: string;
   badge?: string;

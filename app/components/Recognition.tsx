@@ -187,24 +187,50 @@ export default function Recognition() {
                 <div
                   style={{ display: "flex", alignItems: "center", gap: "1rem" }}
                 >
-                  <div
-                    style={{
-                      width: "48px",
-                      height: "48px",
-                      borderRadius: "50%",
-                      background: "rgba(56,189,248,0.13)",
-                      border: "2px solid var(--cyan)",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      flexShrink: 0,
-                    }}
-                  >
-                    <i
-                      className="fa fa-award"
-                      style={{ color: "var(--cyan)", fontSize: "1.1rem" }}
-                    />
-                  </div>
+                  {item.logo ? (
+                    <div
+                      style={{
+                        width: "88px",
+                        height: "40px",
+                        borderRadius: "8px",
+                        overflow: "hidden",
+                        flexShrink: 0,
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                      }}
+                    >
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={item.logo}
+                        alt="Viasat"
+                        style={{
+                          width: "100%",
+                          height: "100%",
+                          objectFit: "contain",
+                        }}
+                      />
+                    </div>
+                  ) : (
+                    <div
+                      style={{
+                        width: "48px",
+                        height: "48px",
+                        borderRadius: "50%",
+                        background: "rgba(56,189,248,0.13)",
+                        border: "2px solid var(--cyan)",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        flexShrink: 0,
+                      }}
+                    >
+                      <i
+                        className="fa fa-award"
+                        style={{ color: "var(--cyan)", fontSize: "1.1rem" }}
+                      />
+                    </div>
+                  )}
                   <div>
                     <p
                       style={{
@@ -367,6 +393,31 @@ export default function Recognition() {
                   marginBottom: "1rem",
                 }}
               >
+                {selectedProof.logo && (
+                  <div
+                    style={{
+                      width: "70px",
+                      height: "32px",
+                      borderRadius: "6px",
+                      overflow: "hidden",
+                      flexShrink: 0,
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={selectedProof.logo}
+                      alt="Viasat"
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "contain",
+                      }}
+                    />
+                  </div>
+                )}
                 <span
                   style={{
                     background: "rgba(56,189,248,0.15)",
