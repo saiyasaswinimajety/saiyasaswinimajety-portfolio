@@ -252,6 +252,48 @@ export default function Hero() {
             Open to Senior Backend & Cloud Infrastructure Roles
           </span>
         </motion.div>
+
+        {/* Action Button: Download Master Resume PDF */}
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3, delay: 0.1 }}
+          className="mt-6 flex items-center justify-center gap-4"
+        >
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              gap: "8px",
+              padding: "10px 24px",
+              background: "linear-gradient(135deg, #1E3A8A 0%, #0284C7 100%)",
+              border: "1px solid rgba(56, 189, 248, 0.5)",
+              borderRadius: "8px",
+              fontSize: "0.88rem",
+              color: "#FFFFFF",
+              fontWeight: 700,
+              textDecoration: "none",
+              boxShadow: "0 4px 14px rgba(2, 132, 199, 0.3)",
+              transition: "all 0.2s ease",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = "translateY(-2px)";
+              e.currentTarget.style.boxShadow =
+                "0 6px 20px rgba(56, 189, 248, 0.4)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = "translateY(0)";
+              e.currentTarget.style.boxShadow =
+                "0 4px 14px rgba(2, 132, 199, 0.3)";
+            }}
+          >
+            <i className="fa fa-file-pdf-o" style={{ fontSize: "1rem" }} />
+            <span>Download Master Resume (PDF)</span>
+          </a>
+        </motion.div>
       </div>
     </header>
   );
