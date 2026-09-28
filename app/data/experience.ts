@@ -3,7 +3,7 @@ import type { Job } from "@/app/types";
 export const jobs: Job[] = [
   {
     company: "Independent Research",
-    logo: "https://cdn-icons-png.flaticon.com/512/1995/1995574.png",
+    logo: "/img/companies/research.svg",
     role: "AI Systems & Cloud Infrastructure Researcher",
     period: "Mar 2024 – Present",
     location: "Houston, TX (Remote)",
@@ -58,7 +58,7 @@ export const jobs: Job[] = [
   },
   {
     company: "Viasat Inc.",
-    logo: "https://logo.clearbit.com/viasat.com",
+    logo: "/img/companies/viasat.svg",
     role: "Senior Software Engineer (DevOps & System Integration)",
     period: "Jun 2018 – Feb 2024",
     location: "Chennai, India",
@@ -129,7 +129,7 @@ export const jobs: Job[] = [
   },
   {
     company: "Viasat Inc.",
-    logo: "https://logo.clearbit.com/viasat.com",
+    logo: "/img/companies/viasat.svg",
     role: "Software Engineer Intern",
     period: "Jan 2018 – May 2018",
     location: "Chennai, India",
