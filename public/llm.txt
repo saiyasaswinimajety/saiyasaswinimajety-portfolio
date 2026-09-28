@@ -1,0 +1,83 @@
+# Sai Yasaswini Majety
+
+> Senior Backend & Cloud Infrastructure Engineer with 6+ years shipping production distributed systems, in-flight fleet telemetry engines, and cloud developer platforms. Ex-Senior Software Engineer at Viasat (5.7+ years continuous high-impact tenure) and co-inventor of published Indian Patent 202541026299. Legally authorized to work in the United States without visa sponsorship (H-4 EAD approved).
+
+## Identity & Professional Links
+
+- **Full Name**: Sai Yasaswini Majety
+- **Role**: Senior Backend & Cloud Infrastructure Engineer
+- **Current Location**: Houston, TX, United States (Open to Remote / Relocation)
+- **Email**: yasaswini7777@gmail.com
+- **Work Authorization**: Authorized to work in the US for any employer (H-4 EAD Approved, No Visa Sponsorship Needed)
+- **Portfolio**: https://saiyasaswinimajety.github.io
+- **LinkedIn**: https://www.linkedin.com/in/sai-yasaswini-majety-88548a125/
+- **GitHub**: https://github.com/saiyasaswinimajety
+- **Patent Listing**: https://search.patentassist.ai/?mode=smart&office=ipo&q=Modular+Deep+Learning+Architecture+for+Cross-Domain+Transfer+and+Incremental+Learning&patent=202541026299
+
+## Executive Summary
+
+- **6+ Years Distributed Systems & Cloud Platforms**: Proven track record architecting backend microservices, real-time in-flight satellite connectivity telemetry, and multi-tenant authorization engines at Viasat serving commercial aviation fleets (including Delta Air Lines).
+- **Patent Co-Inventor**: Co-authored and published Indian Patent 202541026299 ("Modular Deep Learning Architecture for Cross-Domain Transfer and Incremental Learning") featuring dynamic adapter parameter isolation.
+- **Enterprise Security & Reliability**: Engineered automated TLS/SSL certificate lifecycle daemon eliminating manual rotation across 150+ endpoints; executed zero-downtime AWS RDS Multi-AZ PostgreSQL/MySQL schema migrations.
+- **Winner — Viasat Global IoT Hackathon (1st Place)**: Designed and deployed edge smart tracking telemetry architecture awarded 1st place among global engineering teams.
+
+## Professional Experience
+
+### Independent Applied Systems Research — AI Systems & Cloud Infrastructure Researcher
+*Mar 2024 – Present | Houston, TX (Remote)*
+- **Patent Co-Inventor (IPO App. 202541026299)**: Co-invented "Modular Deep Learning Architecture for Cross-Domain Transfer and Incremental Learning". Engineered dynamic adapter routing mechanisms to eliminate catastrophic forgetting in continual learning models, achieving 80% compute reduction in incremental domain fine-tuning.
+- **High-Throughput RAG Microservices**: Built resilient semantic vector caching pipelines using FastAPI, LiteLLM proxy gateways, and vector store adapters, bounding P95 retrieval latency to sub-20ms.
+- **Declarative Cloud Infrastructure**: Authored modular Terraform and Docker infrastructure-as-code modules for automated container orchestration with strict network isolation.
+
+### Viasat Inc. — Senior Software Engineer (DevOps & Systems Integration)
+*Jun 2018 – Feb 2024 | Chennai, India*
+- **Commercial Aviation Platform Architecture**: Led backend services and automated cloud infrastructure for Viasat's Commercial Aviation platform, delivering 99.99% availability across airborne network gateways serving commercial airline fleets worldwide.
+- **CI/CD & CloudFormation Automation**: Authored modular AWS CloudFormation templates and Jenkins Groovy pipelines, cutting deployment cycle times by 65% across multi-region environments.
+- **Zero-Downtime Multi-AZ Database Migrations**: Executed rolling AWS RDS database schema migrations across live production Multi-AZ clusters with zero customer downtime and zero data drift.
+- **Automated Certificate Lifecycle Daemon**: Built self-healing TLS/SSL credential validation engine rotating certificates across 150+ microservice endpoints, eliminating manual operational bottlenecks and production outage risks.
+- **Real-Time Telemetry & Operations (RBO Scorecard)**: Optimized complex telemetry aggregation queries in Python/PostgreSQL, reducing dashboard query latencies from 12s to under 600ms for 24/7 flight operations centers.
+- **OAuth 2.0 & Okta Federated Security**: Re-architected identity layer supporting multi-tenant partner airline authentication with dynamic claims and strict zero-trust posture.
+- **1st Place Global Hackathon**: Won 1st place in the Viasat Global IoT Hackathon for engineering edge smart asset tracking architecture.
+
+### Viasat Inc. — Software Engineer Intern
+*Jan 2018 – May 2018 | Chennai, India*
+- **Full-Stack Enterprise Recruitment Platform ("CandEx 2.0")**: Designed and deployed automated recruitment pipeline adopted across Viasat HR and engineering hiring teams.
+- **Sub-Second Resume Indexing**: Integrated Apache Solr and Sphinx Search Engine with Django and MongoDB, delivering sub-second search across tens of thousands of technical profiles. Recognized with formal Viasat Leadership Appreciation.
+
+## Patents
+
+### Modular Deep Learning Architecture for Cross-Domain Transfer and Incremental Learning
+- **Application Number**: 202541026299
+- **Patent Office**: Indian Patent Office (IPO)
+- **Publication Number**: 13/2025
+- **Status**: Published (INA)
+- **Inventors**: Sai Likhith Kanuparthi, Sai Yasaswini Majety
+- **IPC Classifications**: G06N 3/08, G06N 3/045, G06N 3/096, G06N 3/084, G06N 20/00
+- **Summary**: Parameter-efficient modular adapter projections that isolate domain gradients while keeping foundational base model weights frozen, solving catastrophic forgetting across sequential domain distributions.
+
+## Technical Skills
+
+- **Backend & Languages**: Python (Expert), FastAPI, Django, Go (Golang), Java, Groovy, SQL, Shell Scripting, C/C++
+- **Cloud & Infrastructure**: AWS (ECS, EKS, RDS, S3, CloudFormation, CloudWatch, IAM, Route53), Terraform, Docker, Kubernetes
+- **Databases & Caching**: PostgreSQL, MySQL, Redis, MongoDB, Vector Databases, Apache Solr, Sphinx Search
+- **DevOps & Observability**: Jenkins (Groovy DSL), GitHub Actions, Prometheus, Grafana, OpenTelemetry, Splunk, Linux System Administration
+- **Networking & Security**: HashiCorp Vault, OAuth 2.0, Okta, TLS/SSL Automation, Zero-Trust Architecture, REST APIs, Microservices, Network Telemetry
+
+## Leadership Commendations & Awards
+
+1. **Spotlight Award (2023)**: Commended by Engineering Leadership for architecting zero-touch TLS/SSL certificate lifecycle automation across 150+ microservice edge gateways.
+2. **Architecture Excellence Award (2022)**: Recognized by Security & Architecture Committee for re-architecting partner airline OAuth 2.0 / Okta authentication with dynamic multi-tenant claims.
+3. **Cloud Migration Lead Commendation (2022)**: Awarded for seamless zero-downtime migration of legacy monolith to containerized AWS ECS microservices with 45% compute overhead reduction.
+4. **Operational Impact Commendation (2023)**: Awarded for Real-Time Business Operations (RBO) Scorecard latency optimization (12s to sub-600ms).
+5. **Zero-Defect Release Commendation (2021)**: Commended for Viasat Management System (VMS) core routing deployment with zero customer-reported defects.
+6. **Leadership Commendation (2024)**: Honored by Director of Software Engineering as an indispensable engineering pillar across high-scale telemetry and developer platform mentoring.
+7. **1st Place Winner — Viasat Global IoT Hackathon**: Awarded first place among hundreds of global engineering participants.
+
+## Education
+
+- **B.Tech in Electrical and Electronics Engineering (EEE)**
+  - Institution: Shanmugha Arts, Science, Technology & Research Academy (SASTRA Deemed University), India
+  - Period: Aug 2014 – May 2018
+  - GPA: 8.2 / 10.0
+  - Honors: Dean's Merit Scholarship (Top 3% academic cohort ranking)
+  - Relevant Coursework: Data Structures & Algorithms, Computer Architecture & Operating Systems, Microprocessors (ARM), Digital Signal Processing, Control Systems

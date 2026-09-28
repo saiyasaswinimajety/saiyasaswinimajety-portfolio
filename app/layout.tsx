@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     template: "%s - Sai Yasaswini Majety",
   },
   description:
-    "Senior Backend & Cloud Infrastructure Engineer with 6+ years shipping high-availability distributed systems, in-flight fleet telemetry engines, and enterprise developer platforms. Ex-Senior Software Engineer at Viasat and co-inventor of published Indian Patent 202541026299.",
+    "Senior Backend & Cloud Infrastructure Engineer with 6+ years shipping high-availability distributed systems, in-flight fleet telemetry engines, and enterprise developer platforms. Ex-Senior Software Engineer at Viasat and co-inventor of published Indian Patent 202541026299. H-4 EAD approved.",
   keywords: [
     "Sai Yasaswini Majety",
     "Yasaswini Majety",
@@ -36,6 +36,7 @@ export const metadata: Metadata = {
     "Commercial Aviation Connectivity",
     "In-Flight Telemetry Ingestion",
     "AWS ECS",
+    "AWS RDS",
     "PostgreSQL",
     "FastAPI",
     "Django",
@@ -51,10 +52,27 @@ export const metadata: Metadata = {
     "Indian Patent 202541026299",
     "SASTRA University",
     "H-4 EAD",
+    "No Visa Sponsorship Needed",
   ],
-  authors: [{ name: "Sai Yasaswini Majety" }],
+  authors: [
+    {
+      name: "Sai Yasaswini Majety",
+      url: "https://saiyasaswinimajety.github.io",
+    },
+  ],
   creator: "Sai Yasaswini Majety",
   publisher: "Sai Yasaswini Majety",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
+  },
+  manifest: "/manifest.webmanifest",
+  alternates: {
+    canonical: "https://saiyasaswinimajety.github.io",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -63,13 +81,13 @@ export const metadata: Metadata = {
     title:
       "Sai Yasaswini Majety - Senior Backend & Cloud Infrastructure Engineer",
     description:
-      "Senior Backend & Cloud Infrastructure Engineer. Ex-Viasat (6 years), Co-Inventor of Published Indian Patent 202541026299, and architect of distributed in-flight fleet telemetry pipelines.",
+      "Senior Backend & Cloud Infrastructure Engineer. Ex-Viasat (6 years), Co-Inventor of Published Indian Patent 202541026299, and architect of distributed in-flight fleet telemetry pipelines. H-4 EAD.",
     images: [
       {
-        url: "/img/avatar.jpg",
-        width: 800,
-        height: 800,
-        alt: "Sai Yasaswini Majety",
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Sai Yasaswini Majety - Senior Backend & Cloud Infrastructure Engineer",
       },
     ],
   },
@@ -78,13 +96,20 @@ export const metadata: Metadata = {
     title:
       "Sai Yasaswini Majety - Senior Backend & Cloud Infrastructure Engineer",
     description:
-      "Senior Backend & Cloud Infrastructure Engineer. Ex-Viasat, Indian Patent 202541026299 Co-Inventor.",
-    images: ["/img/avatar.jpg"],
+      "Senior Backend & Cloud Infrastructure Engineer. Ex-Viasat (6 years), Indian Patent 202541026299 Co-Inventor. H-4 EAD.",
+    images: ["/og-image.png"],
   },
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
+  category: "technology",
 };
 
 export default function RootLayout({
@@ -95,11 +120,18 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${montserrat.variable} ${lato.variable}`}>
       <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/manifest.webmanifest" />
+        <meta name="theme-color" content="#18BC9C" />
+        <meta name="author" content="Sai Yasaswini Majety" />
         <link rel="canonical" href="https://saiyasaswinimajety.github.io" />
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         />
+        {/* Schema.org Person metadata */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -113,27 +145,30 @@ export default function RootLayout({
               email: "mailto:yasaswini7777@gmail.com",
               jobTitle: "Senior Backend & Cloud Infrastructure Engineer",
               description:
-                "Senior Backend & Cloud Infrastructure Engineer with 6+ years shipping production distributed systems, in-flight fleet telemetry engines, and enterprise developer platforms. Ex-Senior Software Engineer at Viasat and co-inventor of published Indian Patent 202541026299.",
+                "Senior Backend & Cloud Infrastructure Engineer with 6+ years shipping production distributed systems, in-flight fleet telemetry engines, and enterprise developer platforms. Ex-Senior Software Engineer at Viasat and co-inventor of published Indian Patent 202541026299. H-4 EAD approved.",
               address: {
                 "@type": "PostalAddress",
                 addressLocality: "Houston",
                 addressRegion: "TX",
                 addressCountry: "United States",
               },
+              knowsLanguage: ["English", "Telugu", "Hindi"],
               knowsAbout: [
                 "Backend Engineering",
                 "Distributed Systems",
                 "Cloud Infrastructure",
-                "AWS Cloud Architecture",
+                "AWS Cloud Architecture (ECS, RDS, CloudFormation)",
                 "In-Flight Telemetry Ingestion",
                 "FastAPI",
                 "Django",
                 "Python",
+                "Golang",
                 "PostgreSQL",
                 "Docker",
                 "Kubernetes",
                 "HashiCorp Vault",
                 "OAuth 2.0 & Okta",
+                "TLS/SSL Automation",
                 "Modular Deep Learning",
                 "Parameter-Efficient Adapter Architectures",
               ],
@@ -141,7 +176,12 @@ export default function RootLayout({
                 "https://www.linkedin.com/in/sai-yasaswini-majety-88548a125/",
                 "https://github.com/saiyasaswinimajety",
                 "https://search.patentassist.ai/?mode=smart&office=ipo&q=Modular+Deep+Learning+Architecture+for+Cross-Domain+Transfer+and+Incremental+Learning&patent=202541026299",
+                "https://saiyasaswinimajety.github.io",
               ],
+              worksFor: {
+                "@type": "Organization",
+                name: "Independent Applied Systems Research",
+              },
               alumniOf: [
                 {
                   "@type": "EducationalOrganization",
@@ -149,17 +189,49 @@ export default function RootLayout({
                   department: "Electrical and Electronics Engineering",
                 },
               ],
+              award: [
+                "1st Place Winner: Viasat IoT Global Hackathon",
+                "Viasat Leadership Commendation: Certificate Automation",
+                "Viasat Engineering Award: OAuth 2.0 Security Migration",
+                "Dean's Merit Scholarship (Top 3% Academic Cohort)",
+              ],
               workExperience: [
                 {
                   "@type": "Organization",
                   name: "Viasat Inc.",
                   description:
-                    "Senior Software Engineer - In-Flight Fleet Telemetry, Certificate Automation, Monolith to Microservices Cloud Migration",
+                    "Senior Software Engineer - Commercial In-Flight Fleet Telemetry, TLS/SSL Automation Daemon, Zero-Downtime Multi-AZ Cloud Migration",
+                },
+                {
+                  "@type": "Organization",
+                  name: "Independent Applied Systems Research",
+                  description:
+                    "AI Systems & Cloud Infrastructure Researcher - Dynamic Adapter Architectures, Patent Co-Inventor",
                 },
               ],
             }),
           }}
         />
+        {/* Schema.org WebSite metadata */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "Sai Yasaswini Majety",
+              url: "https://saiyasaswinimajety.github.io",
+              description:
+                "Portfolio of Sai Yasaswini Majety - Senior Backend & Cloud Infrastructure Engineer. Ex-Viasat (6 years) and co-inventor of published Indian Patent 202541026299.",
+              author: {
+                "@type": "Person",
+                name: "Sai Yasaswini Majety",
+                url: "https://saiyasaswinimajety.github.io",
+              },
+            }),
+          }}
+        />
+        {/* Schema.org Publications / Patents */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
