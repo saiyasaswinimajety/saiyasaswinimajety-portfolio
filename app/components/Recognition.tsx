@@ -38,6 +38,29 @@ export default function Recognition() {
     <section id="recognition" className="section-wrapper">
       <div className="section-inner">
         <SectionHeading title="Recognition & Commendations" divider="light" />
+        <p style={{
+          color: "var(--muted)",
+          fontSize: "0.9rem",
+          marginTop: "-0.5rem",
+          marginBottom: "1.5rem",
+          display: "flex",
+          alignItems: "center",
+          gap: "0.6rem",
+        }}>
+          <span style={{
+            background: "linear-gradient(135deg, rgba(24,188,156,0.2), rgba(56,189,248,0.2))",
+            border: "1px solid rgba(24,188,156,0.4)",
+            borderRadius: "20px",
+            padding: "0.2rem 0.75rem",
+            color: "var(--teal)",
+            fontWeight: 700,
+            fontSize: "0.85rem",
+            letterSpacing: "0.04em",
+          }}>
+            {recognitions.length} Appreciation Letters
+          </span>
+          from engineering leadership at Viasat
+        </p>
 
         <div style={{ position: "relative", marginTop: "1rem" }}>
           {/* Left arrow */}
