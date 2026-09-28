@@ -1,0 +1,58 @@
+import type { Recognition } from "@/app/types";
+
+export const recognitions: Recognition[] = [
+  {
+    name: "Engineering Leadership & Team",
+    title: "Viasat Commercial In-Flight Connectivity Platform",
+    badge: "Spotlight Award",
+    date: "2023",
+    image: "/img/appreciations/cert_automation_appreciation.png",
+    quote:
+      "Huge shoutout to Yasaswini for driving the Certificate Automation initiative to completion! By eliminating manual TLS/SSL rotation and building self-healing certificate pipelines across our edge gateways, she removed a recurring operational bottleneck and eliminated outage risks across 150+ microservice endpoints. Exceptional engineering execution!",
+  },
+  {
+    name: "Security & Architecture Committee",
+    title: "Viasat Enterprise Services",
+    badge: "Architecture Excellence",
+    date: "2022",
+    image: "/img/appreciations/oauth_flexibility_appreciation.png",
+    quote:
+      "Yasaswini did an exceptional job re-architecting our OAuth 2.0 and Okta federated authentication flow. Her design provided unprecedented flexibility for partner airline portals, allowing dynamic custom claims and multi-tenant token validation while adhering strictly to zero-trust security standards. A masterclass in clean backend architecture.",
+  },
+  {
+    name: "Platform Migration Taskforce",
+    title: "Viasat Core Infrastructure Group",
+    badge: "Cloud Migration Lead",
+    date: "2022",
+    image: "/img/appreciations/Migration_appreciation.png",
+    quote:
+      "A massive thank you to Yasaswini for spearheading the migration of our legacy Django/PostgreSQL monolith to AWS containerized microservices on ECS. The migration was executed seamlessly with zero downtime, zero data drift, and delivered a 45% reduction in compute overhead. Her meticulous planning and rollback strategies were flawless.",
+  },
+  {
+    name: "Operations & Observability Lead",
+    title: "Viasat Commercial Aviation Operations",
+    badge: "Operational Impact",
+    date: "2023",
+    image: "/img/appreciations/RBO_scorecard_appreciation.png",
+    quote:
+      "Yasaswini's contributions to the Real-Time Business Operations (RBO) Scorecard platform transformed how we monitor inflight connectivity health across global airline fleets. Her optimized telemetry aggregation queries reduced dashboard loading latencies from 12s to under 600ms, providing real-time visibility to 24/7 flight operations centers.",
+  },
+  {
+    name: "Viasat Management System (VMS) Team",
+    title: "Viasat Global Network Operations",
+    badge: "Zero-Defect Release",
+    date: "2021",
+    image: "/img/appreciations/VMS_appreciation.png",
+    quote:
+      "Kudos to Yasaswini for delivering a rock-solid release of the VMS core routing and device management module. Her comprehensive unit and integration testing suites identified several critical edge cases prior to staging. The release went live with zero customer-reported defects and substantially lowered our Sev-1 triage burden.",
+  },
+  {
+    name: "Director of Software Engineering",
+    title: "Viasat In-Flight Services & Connectivity",
+    badge: "Leadership Commendation",
+    date: "2024",
+    image: "/img/appreciations/mail_for_fnf.png",
+    quote:
+      "Yasaswini has been an indispensable pillar of our engineering organization throughout her tenure. From architecting high-scale telemetry backends to mentoring junior engineers and raising our code quality bar, her impact is felt across every service we run today. She embodies technical rigor, extreme ownership, and engineering excellence.",
+  },
+];
