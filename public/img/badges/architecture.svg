@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <defs>
+    <radialGradient id="arc-bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#091227"/>
+    </radialGradient>
+    <linearGradient id="arc-purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C084FC"/>
+      <stop offset="50%" stop-color="#9333EA"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="60" r="50" fill="url(#arc-bg)" stroke="url(#arc-purple)" stroke-width="3" filter="drop-shadow(0 6px 12px rgba(0,0,0,0.5))"/>
+
+  <!-- Hexagonal Tech Gateway -->
+  <polygon points="60,28 84,41 84,69 60,82 36,69 36,41" stroke="url(#arc-purple)" stroke-width="2.5" fill="rgba(147, 51, 234, 0.15)"/>
+  <polygon points="60,34 78,44 78,66 60,76 42,66 42,44" stroke="#38BDF8" stroke-width="1" fill="#0F172A" opacity="0.8"/>
+
+  <!-- Interconnected OAuth / Gateway Nodes -->
+  <path d="M60 42V55M48 62L60 55L72 62" stroke="#C084FC" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="60" cy="42" r="4.5" fill="#38BDF8" stroke="#FFF" stroke-width="1"/>
+  <circle cx="48" cy="62" r="4" fill="#A855F7" stroke="#FFF" stroke-width="1"/>
+  <circle cx="72" cy="62" r="4" fill="#A855F7" stroke="#FFF" stroke-width="1"/>
+  <circle cx="60" cy="55" r="3.5" fill="#FDE68A"/>
+
+  <!-- Banner: OAUTH 2.0 -->
+  <rect x="30" y="90" width="60" height="13" rx="6.5" fill="url(#arc-purple)"/>
+  <rect x="32" y="92" width="56" height="9" rx="4.5" fill="#091227"/>
+  <text x="60" y="99" fill="#C084FC" font-family="'Montserrat', sans-serif" font-size="6.5" font-weight="900" text-anchor="middle" letter-spacing="1">IDENTITY</text>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <defs>
+    <radialGradient id="cld-bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#091227"/>
+    </radialGradient>
+    <linearGradient id="cld-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="50%" stop-color="#0EA5E9"/>
+      <stop offset="100%" stop-color="#10B981"/>
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="60" r="50" fill="url(#cld-bg)" stroke="url(#cld-grad)" stroke-width="3" filter="drop-shadow(0 6px 12px rgba(0,0,0,0.5))"/>
+
+  <!-- High Availability Orbit Ring -->
+  <circle cx="60" cy="54" r="34" stroke="url(#cld-grad)" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.6"/>
+
+  <!-- Cloud Shape -->
+  <path d="M44 64C39 64 35 60 35 55C35 50.5 38.5 46.8 43 46.1C44.5 38.5 51.5 33 60 33C67.5 33 73.8 37.5 76 44C79.8 44.5 83 47.8 83 52C83 56.5 79.5 60 75 60C74 60 73 59.8 72 59.5" fill="#0F172A" stroke="url(#cld-grad)" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M44 64H76C80 64 83 60.5 83 56.5" stroke="url(#cld-grad)" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- High-Availability Lightning Bolt / Zero Downtime Pulse -->
+  <polygon points="62,43 52,56 59,56 57,69 68,54 61,54" fill="#FDE68A" stroke="#D97706" stroke-width="1" filter="drop-shadow(0 2px 4px rgba(245, 158, 11, 0.5))"/>
+
+  <!-- Banner: 99.99% UPTIME -->
+  <rect x="30" y="90" width="60" height="13" rx="6.5" fill="url(#cld-grad)"/>
+  <rect x="32" y="92" width="56" height="9" rx="4.5" fill="#091227"/>
+  <text x="60" y="99" fill="#38BDF8" font-family="'Montserrat', sans-serif" font-size="6.5" font-weight="900" text-anchor="middle" letter-spacing="1">UPTIME 99.9%</text>
+</svg>

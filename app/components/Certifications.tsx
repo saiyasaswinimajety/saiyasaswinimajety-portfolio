@@ -89,6 +89,45 @@ export default function Certifications() {
                     {cert.date}
                   </p>
                 )}
+                {cert.url && (
+                  <a
+                    href={cert.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      display: "inline-flex",
+                      alignItems: "center",
+                      gap: "0.35rem",
+                      color: "var(--cyan)",
+                      fontSize: "0.75rem",
+                      fontWeight: 600,
+                      marginTop: "0.6rem",
+                      textDecoration: "none",
+                      padding: "4px 10px",
+                      borderRadius: "6px",
+                      border: "1px solid rgba(56, 189, 248, 0.4)",
+                      background: "rgba(56, 189, 248, 0.08)",
+                      transition: "all 0.2s ease",
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.background =
+                        "rgba(56, 189, 248, 0.2)";
+                      e.currentTarget.style.borderColor = "var(--cyan)";
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.background =
+                        "rgba(56, 189, 248, 0.08)";
+                      e.currentTarget.style.borderColor =
+                        "rgba(56, 189, 248, 0.4)";
+                    }}
+                  >
+                    <span>Verify Gazette Record</span>
+                    <i
+                      className="fa fa-external-link"
+                      style={{ fontSize: "0.7rem" }}
+                    />
+                  </a>
+                )}
               </div>
             </motion.div>
           ))}

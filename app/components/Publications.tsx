@@ -7,9 +7,9 @@ import { Modal } from "@/app/components/ui/Modal";
 import { publications, type Publication } from "@/app/data";
 
 const typeIcon: Record<Publication["type"], string> = {
-  patent: "fa-lightbulb-o",
+  patent: "fa-certificate",
   conference: "fa-microphone",
-  ieee: "fa-certificate",
+  ieee: "fa-bookmark",
   "book-chapter": "fa-book",
   journal: "fa-newspaper-o",
 };
@@ -23,7 +23,7 @@ const typeLabel: Record<Publication["type"], string> = {
 };
 
 const typeColor: Record<Publication["type"], string> = {
-  patent: "#9b59b6",
+  patent: "#F59E0B",
   conference: "#e67e22",
   ieee: "#38BDF8",
   "book-chapter": "#10B981",
