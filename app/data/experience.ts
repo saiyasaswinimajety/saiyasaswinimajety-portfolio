@@ -32,7 +32,7 @@ export const jobs: Job[] = [
     metrics: [
       "1 Published Patent (IPO 202541026299)",
       "80% compute reduction in incremental fine-tuning",
-      "0 visa sponsorship required (Approved H-4 EAD)",
+      "No Visa Sponsorship Needed (H-4 EAD Approved)",
     ],
     stackList: [
       "Python",
