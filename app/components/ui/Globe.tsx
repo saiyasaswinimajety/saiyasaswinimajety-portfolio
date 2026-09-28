@@ -27,10 +27,38 @@ export default function Globe() {
 
     // Satellites with orbital inclinations and speeds
     const satellites = [
-      { name: "VIASAT-3 AMERICAS", radiusMult: 1.28, angle: 0.2, speed: 0.006, inc: 0.35, color: "#38BDF8" },
-      { name: "VIASAT-2", radiusMult: 1.42, angle: 1.8, speed: 0.004, inc: -0.42, color: "#10B981" },
-      { name: "VIASAT-1", radiusMult: 1.15, angle: 3.2, speed: 0.008, inc: 0.55, color: "#38BDF8" },
-      { name: "KA-SAT", radiusMult: 1.35, angle: 4.5, speed: 0.005, inc: -0.25, color: "#A855F7" },
+      {
+        name: "VIASAT-3 AMERICAS",
+        radiusMult: 1.28,
+        angle: 0.2,
+        speed: 0.006,
+        inc: 0.35,
+        color: "#38BDF8",
+      },
+      {
+        name: "VIASAT-2",
+        radiusMult: 1.42,
+        angle: 1.8,
+        speed: 0.004,
+        inc: -0.42,
+        color: "#10B981",
+      },
+      {
+        name: "VIASAT-1",
+        radiusMult: 1.15,
+        angle: 3.2,
+        speed: 0.008,
+        inc: 0.55,
+        color: "#38BDF8",
+      },
+      {
+        name: "KA-SAT",
+        radiusMult: 1.35,
+        angle: 4.5,
+        speed: 0.005,
+        inc: -0.25,
+        color: "#A855F7",
+      },
     ];
 
     let rotationAngle = 0;
@@ -43,7 +71,14 @@ export default function Globe() {
       const r = R();
 
       // Atmospheric outer glow
-      const glowGrad = ctx.createRadialGradient(center_x, center_y, r * 0.8, center_x, center_y, r * 1.35);
+      const glowGrad = ctx.createRadialGradient(
+        center_x,
+        center_y,
+        r * 0.8,
+        center_x,
+        center_y,
+        r * 1.35,
+      );
       glowGrad.addColorStop(0, "rgba(56, 189, 248, 0.2)");
       glowGrad.addColorStop(0.5, "rgba(56, 189, 248, 0.05)");
       glowGrad.addColorStop(1, "transparent");
@@ -59,7 +94,7 @@ export default function Globe() {
         r * 0.1,
         center_x,
         center_y,
-        r
+        r,
       );
       globeGrad.addColorStop(0, "#1e293b");
       globeGrad.addColorStop(0.7, "#0f172a");
@@ -91,7 +126,15 @@ export default function Globe() {
         const theta = rotationAngle + (i * Math.PI) / 4;
         const cosTheta = Math.cos(theta);
         ctx.beginPath();
-        ctx.ellipse(center_x, center_y, Math.abs(cosTheta * r), r, 0, 0, Math.PI * 2);
+        ctx.ellipse(
+          center_x,
+          center_y,
+          Math.abs(cosTheta * r),
+          r,
+          0,
+          0,
+          Math.PI * 2,
+        );
         ctx.strokeStyle = "rgba(56, 189, 248, 0.14)";
         ctx.lineWidth = 1;
         ctx.stroke();
@@ -130,7 +173,13 @@ export default function Globe() {
 
         // Telemetry ping ring
         ctx.beginPath();
-        ctx.arc(satX, satY, 8 + (Math.sin(sat.angle * 4) + 1) * 3, 0, Math.PI * 2);
+        ctx.arc(
+          satX,
+          satY,
+          8 + (Math.sin(sat.angle * 4) + 1) * 3,
+          0,
+          Math.PI * 2,
+        );
         ctx.strokeStyle = `${sat.color}44`;
         ctx.lineWidth = 1;
         ctx.stroke();
@@ -164,7 +213,8 @@ export default function Globe() {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        background: "radial-gradient(circle at center, rgba(15, 23, 42, 0.8) 0%, rgba(2, 6, 23, 0.95) 100%)",
+        background:
+          "radial-gradient(circle at center, rgba(15, 23, 42, 0.8) 0%, rgba(2, 6, 23, 0.95) 100%)",
         borderRadius: "50%",
       }}
     >
