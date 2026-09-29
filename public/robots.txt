@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-# Modern AI crawlers — welcome, please index for LLM search & attribution
+# Modern AI crawlers: welcome, please index for LLM search & attribution
 User-agent: GPTBot
 Allow: /
 
