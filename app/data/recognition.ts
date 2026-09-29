@@ -3,7 +3,8 @@ import type { Recognition } from "@/app/types";
 export const recognitions: Recognition[] = [
   {
     name: "Mark Dankberg (Executive Chairman) & Rick Baldridge (CEO)",
-    title: "Viasat Corporate Leadership: Commercial Aviation Resilience & Delta Fleet Delivery",
+    title:
+      "Viasat Corporate Leadership: Commercial Aviation Resilience & Delta Fleet Delivery",
     badge: "Executive Leadership Award",
     date: "2021",
     logo: "/img/companies/viasat.svg",
@@ -14,7 +15,8 @@ export const recognitions: Recognition[] = [
   },
   {
     name: "VP Sathyanarayanan N. & HR Head Vinod Sivadas",
-    title: "Viasat Executive Promotion Board: Senior Engineering Merit Elevation",
+    title:
+      "Viasat Executive Promotion Board: Senior Engineering Merit Elevation",
     badge: "Senior Promotion Letter",
     date: "Dec 2022 (Effective Jan 2023)",
     logo: "/img/companies/viasat.svg",
@@ -36,7 +38,8 @@ export const recognitions: Recognition[] = [
   },
   {
     name: "Abhishek Sharma (Manager, Talent Acquisition)",
-    title: "Viasat People Operations: Formal Offer of Employment & Terms of Appointment",
+    title:
+      "Viasat People Operations: Formal Offer of Employment & Terms of Appointment",
     badge: "SWE I Offer Letter",
     date: "May 2018 (Start: Jun 2018)",
     logo: "/img/companies/viasat.svg",
@@ -113,7 +116,8 @@ export const recognitions: Recognition[] = [
   },
   {
     name: "Dean of Academic Affairs",
-    title: "SASTRA Deemed University: School of Electrical & Electronics Engineering",
+    title:
+      "SASTRA Deemed University: School of Electrical & Electronics Engineering",
     badge: "Academic Merit Distinction",
     date: "2016-2017",
     logo: "/img/education/sastra.svg",

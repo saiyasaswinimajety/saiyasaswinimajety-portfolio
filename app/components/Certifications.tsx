@@ -79,7 +79,9 @@ export default function Certifications() {
                   {cert.issuer}
                 </p>
                 {cert.metric && (
-                  <div style={{ marginTop: "0.45rem", marginBottom: "0.25rem" }}>
+                  <div
+                    style={{ marginTop: "0.45rem", marginBottom: "0.25rem" }}
+                  >
                     <span
                       style={{
                         display: "inline-flex",

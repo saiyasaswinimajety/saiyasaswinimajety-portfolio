@@ -378,7 +378,8 @@ export default function Recognition() {
                       e.currentTarget.style.color = "#ffffff";
                       e.currentTarget.style.boxShadow =
                         "0 0 20px rgba(56, 189, 248, 0.35), inset 0 0 10px rgba(56, 189, 248, 0.15)";
-                      e.currentTarget.style.transform = "translateY(0) scale(1)";
+                      e.currentTarget.style.transform =
+                        "translateY(0) scale(1)";
                     }}
                     onMouseDown={(e) => {
                       e.currentTarget.style.background =
@@ -487,8 +488,7 @@ export default function Recognition() {
               border: "1px solid var(--cyan)",
               color: "var(--cyan)",
               borderRadius: "4px",
-              cursor:
-                index === filtered.length - 1 ? "not-allowed" : "pointer",
+              cursor: index === filtered.length - 1 ? "not-allowed" : "pointer",
               opacity: index === filtered.length - 1 ? 0.3 : 1,
             }}
           >

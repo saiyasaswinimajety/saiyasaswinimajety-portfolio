@@ -375,7 +375,10 @@ export default function AboutAndTechStack() {
                         >
                           <i
                             className={`fa ${s.icon}`}
-                            style={{ color: "var(--cyan)", fontSize: "0.85rem" }}
+                            style={{
+                              color: "var(--cyan)",
+                              fontSize: "0.85rem",
+                            }}
                           />
                         </div>
                       )}

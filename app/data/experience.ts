@@ -287,9 +287,7 @@ export const jobs: Job[] = [
       "Formal Leadership Appreciation Award for CandEx 2.0 delivery",
       "Converted to Full-Time Software Engineer I upon graduation",
     ],
-    recognition: [
-      "Viasat Leadership Appreciation Award: CandEx 2.0 Platform",
-    ],
+    recognition: ["Viasat Leadership Appreciation Award: CandEx 2.0 Platform"],
     stackList: [
       "Python",
       "Django",

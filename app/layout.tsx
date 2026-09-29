@@ -17,7 +17,7 @@ const lato = Lato({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://saiyasaswinimajety-portfolio.vercel.app"),
+  metadataBase: new URL("https://saiyasaswini.me"),
   title: {
     default:
       "Sai Yasaswini Majety - Senior Backend & Cloud Infrastructure Engineer",
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
   authors: [
     {
       name: "Sai Yasaswini Majety",
-      url: "https://saiyasaswinimajety-portfolio.vercel.app",
+      url: "https://saiyasaswini.me",
     },
   ],
   creator: "Sai Yasaswini Majety",
@@ -71,12 +71,12 @@ export const metadata: Metadata = {
   },
   manifest: "/manifest.webmanifest",
   alternates: {
-    canonical: "https://saiyasaswinimajety-portfolio.vercel.app",
+    canonical: "https://saiyasaswini.me",
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://saiyasaswinimajety-portfolio.vercel.app",
+    url: "https://saiyasaswini.me",
     siteName: "Sai Yasaswini Majety - Portfolio",
     title:
       "Sai Yasaswini Majety - Senior Backend & Cloud Infrastructure Engineer",
@@ -126,7 +126,7 @@ export default function RootLayout({
         <link rel="manifest" href="/manifest.webmanifest" />
         <meta name="theme-color" content="#18BC9C" />
         <meta name="author" content="Sai Yasaswini Majety" />
-        <link rel="canonical" href="https://saiyasaswinimajety-portfolio.vercel.app" />
+        <link rel="canonical" href="https://saiyasaswini.me" />
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -140,8 +140,8 @@ export default function RootLayout({
               "@type": "Person",
               name: "Sai Yasaswini Majety",
               alternateName: ["Yasaswini Majety", "saiyasaswinimajety"],
-              url: "https://saiyasaswinimajety-portfolio.vercel.app",
-              image: "https://saiyasaswinimajety-portfolio.vercel.app/img/avatar.jpg",
+              url: "https://saiyasaswini.me",
+              image: "https://saiyasaswini.me/img/avatar.jpg",
               email: "mailto:yasaswini7777@gmail.com",
               jobTitle: "Senior Backend & Cloud Infrastructure Engineer",
               description:
@@ -176,7 +176,7 @@ export default function RootLayout({
                 "https://www.linkedin.com/in/sai-yasaswini-majety-88548a125/",
                 "https://github.com/saiyasaswinimajety",
                 "https://search.patentassist.ai/?mode=smart&office=ipo&q=Modular+Deep+Learning+Architecture+for+Cross-Domain+Transfer+and+Incremental+Learning&patent=202541026299",
-                "https://saiyasaswinimajety-portfolio.vercel.app",
+                "https://saiyasaswini.me",
               ],
               worksFor: {
                 "@type": "Organization",
@@ -220,13 +220,13 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "WebSite",
               name: "Sai Yasaswini Majety",
-              url: "https://saiyasaswinimajety-portfolio.vercel.app",
+              url: "https://saiyasaswini.me",
               description:
                 "Portfolio of Sai Yasaswini Majety - Senior Backend & Cloud Infrastructure Engineer. Ex-Viasat (6 years) and co-inventor of published Indian Patent 202541026299.",
               author: {
                 "@type": "Person",
                 name: "Sai Yasaswini Majety",
-                url: "https://saiyasaswinimajety-portfolio.vercel.app",
+                url: "https://saiyasaswini.me",
               },
             }),
           }}

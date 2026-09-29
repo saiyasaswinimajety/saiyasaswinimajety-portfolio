@@ -4,17 +4,17 @@ import { useEffect, useRef, useState } from "react";
 
 // City markers — career and infrastructure footprint across tech hubs
 const MARKERS: Marker[] = [
-  { location: [32.7157, -117.1611], size: 0.06 },  // San Diego
+  { location: [32.7157, -117.1611], size: 0.06 }, // San Diego
   { location: [33.1194, -117.0861], size: 0.055 }, // Carlsbad
-  { location: [29.7604, -95.3698], size: 0.05 },   // Houston
-  { location: [40.7128, -74.006], size: 0.055 },   // New York
-  { location: [37.7749, -122.4194], size: 0.06 },  // San Francisco
-  { location: [51.5074, -0.1278], size: 0.045 },   // London
-  { location: [48.8566, 2.3522], size: 0.04 },     // Paris
-  { location: [35.6762, 139.6503], size: 0.05 },   // Tokyo
-  { location: [1.3521, 103.8198], size: 0.04 },    // Singapore
-  { location: [28.6139, 77.209], size: 0.04 },     // New Delhi
-  { location: [-33.8688, 151.2093], size: 0.04 },  // Sydney
+  { location: [29.7604, -95.3698], size: 0.05 }, // Houston
+  { location: [40.7128, -74.006], size: 0.055 }, // New York
+  { location: [37.7749, -122.4194], size: 0.06 }, // San Francisco
+  { location: [51.5074, -0.1278], size: 0.045 }, // London
+  { location: [48.8566, 2.3522], size: 0.04 }, // Paris
+  { location: [35.6762, 139.6503], size: 0.05 }, // Tokyo
+  { location: [1.3521, 103.8198], size: 0.04 }, // Singapore
+  { location: [28.6139, 77.209], size: 0.04 }, // New Delhi
+  { location: [-33.8688, 151.2093], size: 0.04 }, // Sydney
 ];
 
 // Animated arcs — global infrastructure data flow
