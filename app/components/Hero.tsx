@@ -41,42 +41,44 @@ export default function Hero() {
       className="text-center text-white"
       style={{
         backgroundColor: "var(--bg)",
-        paddingTop: "130px",
-        paddingBottom: "60px",
+        paddingTop: "clamp(120px, 14vh, 155px)",
+        paddingBottom: "50px",
         width: "100%",
         display: "block",
       }}
     >
       <div className="section-inner" style={{ textAlign: "center" }}>
         <motion.div
-          initial={{ opacity: 0, y: -15 }}
+          initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.3 }}
+          transition={{ duration: 0.35 }}
         >
           <div
             style={{
               position: "relative",
-              width: "220px",
-              height: "220px",
+              width: "180px",
+              height: "180px",
               margin: "0 auto",
               borderRadius: "50%",
               padding: "4px",
               background:
-                "linear-gradient(135deg, var(--cyan) 0%, rgba(56, 189, 248, 0.2) 100%)",
-              boxShadow: "0 8px 32px rgba(56, 189, 248, 0.2)",
+                "linear-gradient(135deg, var(--cyan) 0%, rgba(56, 189, 248, 0.3) 100%)",
+              boxShadow: "0 10px 30px rgba(56, 189, 248, 0.25)",
+              overflow: "hidden",
             }}
           >
             <Image
               src="/img/avatar.jpg"
               alt="Sai Yasaswini Majety"
-              width={220}
-              height={220}
+              width={180}
+              height={180}
               priority
               style={{
                 borderRadius: "50%",
                 objectFit: "cover",
                 width: "100%",
                 height: "100%",
+                display: "block",
                 background: "#091227",
               }}
             />
@@ -86,9 +88,9 @@ export default function Hero() {
             className="text-uppercase"
             style={{
               fontFamily: "var(--font-montserrat), sans-serif",
-              fontSize: "clamp(2rem, 5vw, 3rem)",
+              fontSize: "clamp(1.8rem, 4.5vw, 2.75rem)",
               letterSpacing: "0.08em",
-              margin: "1.5rem 0 0.5rem",
+              margin: "1.2rem 0 0.4rem",
               fontWeight: 800,
             }}
           >

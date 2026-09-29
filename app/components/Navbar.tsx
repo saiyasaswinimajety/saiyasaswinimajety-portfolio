@@ -39,12 +39,15 @@ export default function Navbar() {
         top: 0,
         width: "100%",
         zIndex: 50,
-        backgroundColor: "var(--bg)",
-        padding: scrolled ? "10px 0" : "25px 0",
+        backgroundColor: scrolled
+          ? "rgba(9, 18, 39, 0.96)"
+          : "rgba(9, 18, 39, 0.9)",
+        padding: scrolled ? "8px 0" : "14px 0",
         fontFamily: "var(--font-montserrat), sans-serif",
-        transition: "padding 0.3s, background-color 0.3s",
-        borderBottom: scrolled ? "1px solid rgba(56, 189, 248, 0.15)" : "none",
-        backdropFilter: scrolled ? "blur(12px)" : "none",
+        transition: "padding 0.25s ease, background-color 0.25s ease",
+        borderBottom: "1px solid rgba(56, 189, 248, 0.12)",
+        backdropFilter: "blur(14px)",
+        WebkitBackdropFilter: "blur(14px)",
       }}
     >
       <div
@@ -65,8 +68,9 @@ export default function Navbar() {
             textTransform: "uppercase",
             letterSpacing: "0.05em",
             textDecoration: "none",
-            fontSize: scrolled ? "1.3rem" : "1.6rem",
-            transition: "font-size 0.3s",
+            fontSize: scrolled ? "1.05rem" : "1.2rem",
+            whiteSpace: "nowrap",
+            transition: "font-size 0.25s ease",
           }}
         >
           Sai Yasaswini Majety
