@@ -47,7 +47,7 @@ export const certifications: Certification[] = [
   {
     name: "Five-Nines SLA (99.999%): Zero-Downtime AWS Cloud Migration",
     issuer: "Viasat Platform Operations",
-    badge: "/img/badges/cloud.png",
+    badge: "/img/badges/cloud-sync.png",
     metric: "99.999% Telemetry Uptime: 45% Compute Cut",
     date: "2022",
   },
