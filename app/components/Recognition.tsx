@@ -7,15 +7,34 @@ import { Modal } from "@/app/components/ui/Modal";
 import { recognitions } from "@/app/data";
 import type { Recognition as RecognitionType } from "@/app/types";
 
+const CATEGORIES = [
+  { id: "all", label: "All Artifacts" },
+  { id: "progression", label: "Career Progression Letters" },
+  { id: "awards", label: "Executive Awards" },
+  { id: "engineering", label: "Technical Excellence" },
+  { id: "academic", label: "Academic Distinction" },
+] as const;
+
 export default function Recognition() {
+  const [activeCategory, setActiveCategory] = useState<string>("all");
   const [index, setIndex] = useState(0);
   const [selectedProof, setSelectedProof] = useState<RecognitionType | null>(
     null,
   );
 
+  const filtered =
+    activeCategory === "all"
+      ? recognitions
+      : recognitions.filter((r) => r.category === activeCategory);
+
+  const handleCategoryChange = (catId: string) => {
+    setActiveCategory(catId);
+    setIndex(0);
+  };
+
   const prev = () => setIndex((i) => Math.max(i - 1, 0));
-  const next = () => setIndex((i) => Math.min(i + 1, recognitions.length - 1));
-  const item = recognitions[index];
+  const next = () => setIndex((i) => Math.min(i + 1, filtered.length - 1));
+  const item = filtered[index] || filtered[0];
 
   const btnStyle = (disabled: boolean): React.CSSProperties => ({
     flexShrink: 0,
@@ -43,10 +62,11 @@ export default function Recognition() {
             color: "var(--muted)",
             fontSize: "0.9rem",
             marginTop: "-0.5rem",
-            marginBottom: "1.5rem",
+            marginBottom: "1.25rem",
             display: "flex",
             alignItems: "center",
             gap: "0.6rem",
+            flexWrap: "wrap",
           }}
         >
           <span
@@ -62,12 +82,73 @@ export default function Recognition() {
               letterSpacing: "0.04em",
             }}
           >
-            {recognitions.length} Appreciation Letters
+            {recognitions.length} Verified Letters & Commendations
           </span>
-          from engineering leadership at Viasat
+          <span>from executive, HR & engineering leadership</span>
         </p>
 
-        <div style={{ position: "relative", marginTop: "1rem" }}>
+        {/* Category Filter Pills */}
+        <div
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            gap: "0.6rem",
+            marginBottom: "1.5rem",
+          }}
+        >
+          {CATEGORIES.map((cat) => {
+            const count =
+              cat.id === "all"
+                ? recognitions.length
+                : recognitions.filter((r) => r.category === cat.id).length;
+            const isActive = activeCategory === cat.id;
+            return (
+              <button
+                key={cat.id}
+                type="button"
+                onClick={() => handleCategoryChange(cat.id)}
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: "6px",
+                  padding: "6px 14px",
+                  borderRadius: "20px",
+                  fontSize: "0.82rem",
+                  fontWeight: isActive ? 700 : 500,
+                  cursor: "pointer",
+                  transition: "all 0.2s ease",
+                  background: isActive
+                    ? "linear-gradient(135deg, rgba(56, 189, 248, 0.25) 0%, rgba(24, 188, 156, 0.25) 100%)"
+                    : "rgba(255, 255, 255, 0.04)",
+                  border: isActive
+                    ? "1px solid var(--cyan)"
+                    : "1px solid rgba(255, 255, 255, 0.1)",
+                  color: isActive ? "#ffffff" : "var(--muted)",
+                  boxShadow: isActive
+                    ? "0 0 14px rgba(56, 189, 248, 0.25)"
+                    : "none",
+                }}
+              >
+                <span>{cat.label}</span>
+                <span
+                  style={{
+                    fontSize: "0.72rem",
+                    padding: "1px 6px",
+                    borderRadius: "10px",
+                    background: isActive
+                      ? "rgba(56, 189, 248, 0.35)"
+                      : "rgba(255, 255, 255, 0.08)",
+                    color: isActive ? "#ffffff" : "var(--muted)",
+                  }}
+                >
+                  {count}
+                </span>
+              </button>
+            );
+          })}
+        </div>
+
+        <div style={{ position: "relative", marginTop: "0.5rem" }}>
           {/* Left arrow */}
           <button
             onClick={prev}
@@ -333,11 +414,11 @@ export default function Recognition() {
           {/* Right arrow */}
           <button
             onClick={next}
-            disabled={index === recognitions.length - 1}
+            disabled={index === filtered.length - 1}
             aria-label="Next"
             className="hidden md:flex"
             style={{
-              ...btnStyle(index === recognitions.length - 1),
+              ...btnStyle(index === filtered.length - 1),
               position: "absolute",
               right: "-68px",
               top: "50%",
@@ -355,7 +436,7 @@ export default function Recognition() {
             alignItems: "center",
             justifyContent: "center",
             gap: "1rem",
-            marginTop: "1.5rem",
+            marginTop: "1.25rem",
           }}
         >
           <button
@@ -376,7 +457,7 @@ export default function Recognition() {
           </button>
 
           <div style={{ display: "flex", gap: "0.5rem" }}>
-            {recognitions.map((_, i) => (
+            {filtered.map((_, i) => (
               <button
                 key={i}
                 onClick={() => setIndex(i)}
@@ -398,7 +479,7 @@ export default function Recognition() {
 
           <button
             onClick={next}
-            disabled={index === recognitions.length - 1}
+            disabled={index === filtered.length - 1}
             className="md:hidden"
             style={{
               padding: "6px 12px",
@@ -407,12 +488,66 @@ export default function Recognition() {
               color: "var(--cyan)",
               borderRadius: "4px",
               cursor:
-                index === recognitions.length - 1 ? "not-allowed" : "pointer",
-              opacity: index === recognitions.length - 1 ? 0.3 : 1,
+                index === filtered.length - 1 ? "not-allowed" : "pointer",
+              opacity: index === filtered.length - 1 ? 0.3 : 1,
             }}
           >
             ▶
           </button>
+        </div>
+
+        {/* Quick Jump Artifact Selector Pills */}
+        <div
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            gap: "0.5rem",
+            justifyContent: "center",
+            marginTop: "1.25rem",
+            padding: "0 0.5rem",
+          }}
+        >
+          {filtered.map((rec, i) => {
+            const isSelected = i === index;
+            return (
+              <button
+                key={i}
+                type="button"
+                onClick={() => setIndex(i)}
+                style={{
+                  padding: "5px 12px",
+                  borderRadius: "6px",
+                  fontSize: "0.78rem",
+                  fontWeight: isSelected ? 700 : 500,
+                  cursor: "pointer",
+                  transition: "all 0.2s ease",
+                  background: isSelected
+                    ? "linear-gradient(135deg, rgba(56, 189, 248, 0.25) 0%, rgba(24, 188, 156, 0.25) 100%)"
+                    : "rgba(255, 255, 255, 0.04)",
+                  border: isSelected
+                    ? "1px solid var(--cyan)"
+                    : "1px solid rgba(255, 255, 255, 0.08)",
+                  color: isSelected ? "#ffffff" : "#94a3b8",
+                  boxShadow: isSelected
+                    ? "0 0 12px rgba(56, 189, 248, 0.3)"
+                    : "none",
+                }}
+              >
+                <span>{rec.badge || `Artifact ${i + 1}`}</span>
+                {rec.date && (
+                  <span
+                    style={{
+                      marginLeft: "6px",
+                      opacity: 0.65,
+                      fontSize: "0.72rem",
+                    }}
+                  >
+                    ({rec.date.split(" ")[0]})
+                  </span>
+                )}
+              </button>
+            );
+          })}
         </div>
 
         {/* Lightbox Modal for Verification */}

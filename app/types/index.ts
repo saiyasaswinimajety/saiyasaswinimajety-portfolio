@@ -47,6 +47,7 @@ export interface Recognition {
   image?: string;
   badge?: string;
   date?: string;
+  category?: "progression" | "awards" | "engineering" | "academic";
 }
 
 export interface Skill {
