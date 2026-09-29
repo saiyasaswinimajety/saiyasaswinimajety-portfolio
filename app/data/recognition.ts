@@ -2,6 +2,16 @@ import type { Recognition } from "@/app/types";
 
 export const recognitions: Recognition[] = [
   {
+    name: "Mark Dankberg (Executive Chairman) & Rick Baldridge (CEO)",
+    title: "Viasat Corporate Leadership — Commercial Aviation Resilience & Delta Fleet Delivery",
+    badge: "Executive Leadership Award",
+    date: "2021",
+    logo: "/img/companies/viasat.svg",
+    image: "/img/appreciations/dankberg_ceo_performance_award.png",
+    quote:
+      "As we celebrate our 35th year in operation, we couldn't be more grateful or proud of the endurance and resilience of our global Viasat team. To further show our appreciation, we are pleased to award you with an annual discretionary performance bonus award. As we continue to navigate these times, we are exceptionally grateful for the talented team we have helping us address technical and business challenges with creativity, leadership, and tenacity.",
+  },
+  {
     name: "Engineering Leadership & Team",
     title: "Viasat Commercial In-Flight Connectivity Platform",
     badge: "Spotlight Award",
@@ -10,6 +20,16 @@ export const recognitions: Recognition[] = [
     image: "/img/appreciations/cert_automation_appreciation.png",
     quote:
       "Huge shoutout to Yasaswini for driving the Certificate Automation initiative to completion! By eliminating manual TLS/SSL rotation and building self-healing certificate pipelines across our edge gateways, she removed a recurring operational bottleneck and eliminated outage risks across 150+ microservice endpoints. Exceptional engineering execution!",
+  },
+  {
+    name: "Viasat Executive Promotion Board",
+    title: "Viasat Engineering & Technology Group",
+    badge: "Senior Promotion Commendation",
+    date: "2023",
+    logo: "/img/companies/viasat.svg",
+    image: "/img/appreciations/senior_promotion_focal_letter_2023.png",
+    quote:
+      "Formal merit elevation advancing Sai Yasaswini Majety to Senior Software Engineer - I, signed by Vice President Sathyanarayanan Narayanaswamy and People & Culture Leadership. Commending her multi-year architectural contributions across commercial in-flight connectivity platforms, zero-downtime database upgrades, and cloud automation.",
   },
   {
     name: "Security & Architecture Committee",
@@ -60,5 +80,15 @@ export const recognitions: Recognition[] = [
     image: "/img/appreciations/mail_for_fnf.png",
     quote:
       "Yasaswini has been an indispensable pillar of our engineering organization throughout her tenure. From architecting high-scale telemetry backends to mentoring junior engineers and raising our code quality bar, her impact is felt across every service we run today. She embodies technical rigor, extreme ownership, and engineering excellence.",
+  },
+  {
+    name: "Dean of Academic Affairs",
+    title: "SASTRA Deemed University — School of Electrical & Electronics Engineering",
+    badge: "Academic Merit Distinction",
+    date: "2016–2017",
+    logo: "/img/education/sastra.svg",
+    image: "/img/appreciations/sastra_deans_merit_scholarship.png",
+    quote:
+      "Official University Merit List: Majety Sai Yasaswini awarded the prestigious Dean's Merit Scholarship recognizing top 3% percentile academic distinction across engineering coursework in Microprocessors, Control Systems, Digital Signal Processing, and Object-Oriented Software Design.",
   },
 ];

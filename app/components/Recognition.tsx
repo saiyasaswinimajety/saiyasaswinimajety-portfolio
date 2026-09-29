@@ -259,33 +259,71 @@ export default function Recognition() {
                 {/* View verified document button */}
                 {item.image && (
                   <button
+                    type="button"
                     onClick={() => setSelectedProof(item)}
                     style={{
                       display: "inline-flex",
                       alignItems: "center",
-                      gap: "8px",
-                      padding: "8px 16px",
-                      background: "rgba(56,189,248,0.12)",
-                      border: "1px solid var(--cyan)",
-                      borderRadius: "8px",
-                      color: "var(--cyan)",
-                      fontSize: "0.82rem",
-                      fontWeight: 600,
+                      gap: "9px",
+                      padding: "9px 20px",
+                      background:
+                        "linear-gradient(135deg, rgba(56, 189, 248, 0.22) 0%, rgba(24, 188, 156, 0.22) 100%)",
+                      border: "1px solid #38bdf8",
+                      borderRadius: "999px",
+                      color: "#ffffff",
+                      fontSize: "0.85rem",
+                      fontWeight: 700,
+                      letterSpacing: "0.03em",
                       cursor: "pointer",
-                      transition: "all 0.2s ease",
+                      boxShadow:
+                        "0 0 20px rgba(56, 189, 248, 0.35), inset 0 0 10px rgba(56, 189, 248, 0.15)",
+                      transition: "all 0.25s ease",
+                      outline: "none",
                     }}
                     onMouseEnter={(e) => {
-                      e.currentTarget.style.background = "var(--cyan)";
-                      e.currentTarget.style.color = "#091227";
+                      e.currentTarget.style.background =
+                        "linear-gradient(135deg, rgba(56, 189, 248, 0.45) 0%, rgba(24, 188, 156, 0.45) 100%)";
+                      e.currentTarget.style.borderColor = "#7dd3fc";
+                      e.currentTarget.style.color = "#ffffff";
+                      e.currentTarget.style.boxShadow =
+                        "0 0 28px rgba(56, 189, 248, 0.75), inset 0 0 14px rgba(56, 189, 248, 0.3)";
+                      e.currentTarget.style.transform =
+                        "translateY(-2px) scale(1.02)";
                     }}
                     onMouseLeave={(e) => {
                       e.currentTarget.style.background =
-                        "rgba(56,189,248,0.12)";
-                      e.currentTarget.style.color = "var(--cyan)";
+                        "linear-gradient(135deg, rgba(56, 189, 248, 0.22) 0%, rgba(24, 188, 156, 0.22) 100%)";
+                      e.currentTarget.style.borderColor = "#38bdf8";
+                      e.currentTarget.style.color = "#ffffff";
+                      e.currentTarget.style.boxShadow =
+                        "0 0 20px rgba(56, 189, 248, 0.35), inset 0 0 10px rgba(56, 189, 248, 0.15)";
+                      e.currentTarget.style.transform = "translateY(0) scale(1)";
+                    }}
+                    onMouseDown={(e) => {
+                      e.currentTarget.style.background =
+                        "linear-gradient(135deg, rgba(56, 189, 248, 0.6) 0%, rgba(24, 188, 156, 0.6) 100%)";
+                      e.currentTarget.style.boxShadow =
+                        "0 0 35px rgba(56, 189, 248, 0.95), inset 0 0 20px rgba(56, 189, 248, 0.5)";
+                      e.currentTarget.style.color = "#ffffff";
+                      e.currentTarget.style.transform =
+                        "translateY(0) scale(0.98)";
                     }}
                   >
-                    <i className="fa fa-file-text-o" />
-                    <span>View Letter / Artifact</span>
+                    <i
+                      className="fa fa-file-text-o"
+                      style={{
+                        color: "#38bdf8",
+                        fontSize: "0.95rem",
+                        filter: "drop-shadow(0 0 6px rgba(56,189,248,0.8))",
+                      }}
+                    />
+                    <span
+                      style={{
+                        textShadow: "0 0 8px rgba(255,255,255,0.4)",
+                      }}
+                    >
+                      View Letter / Artifact
+                    </span>
                   </button>
                 )}
               </div>
