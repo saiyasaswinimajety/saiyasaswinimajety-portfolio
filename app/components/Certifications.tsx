@@ -45,16 +45,43 @@ export default function Certifications() {
                 e.currentTarget.style.transform = "translateY(0)";
               }}
             >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={cert.badge}
-                alt={cert.name}
-                style={{
-                  height: "72px",
-                  width: "72px",
-                  objectFit: "contain",
-                }}
-              />
+              {cert.icon ? (
+                <div
+                  style={{
+                    width: "60px",
+                    height: "60px",
+                    borderRadius: "14px",
+                    background: `linear-gradient(135deg, ${cert.iconColor || "var(--cyan)"}1f 0%, rgba(15,23,42,0.8) 100%)`,
+                    border: `1.5px solid ${cert.iconColor || "var(--cyan)"}44`,
+                    boxShadow: `0 0 20px ${cert.iconColor || "var(--cyan)"}22, inset 0 0 10px ${cert.iconColor || "var(--cyan)"}11`,
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    flexShrink: 0,
+                    transition: "all 0.25s ease",
+                  }}
+                >
+                  <i
+                    className={`fa ${cert.icon}`}
+                    style={{
+                      color: cert.iconColor || "var(--cyan)",
+                      fontSize: "1.65rem",
+                      filter: `drop-shadow(0 0 8px ${cert.iconColor || "var(--cyan)"}80)`,
+                    }}
+                  />
+                </div>
+              ) : cert.badge ? (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                  src={cert.badge}
+                  alt={cert.name}
+                  style={{
+                    height: "60px",
+                    width: "60px",
+                    objectFit: "contain",
+                  }}
+                />
+              ) : null}
               <div>
                 <p
                   style={{
@@ -78,12 +105,34 @@ export default function Certifications() {
                 >
                   {cert.issuer}
                 </p>
+                {cert.metric && (
+                  <div style={{ marginTop: "0.45rem", marginBottom: "0.25rem" }}>
+                    <span
+                      style={{
+                        display: "inline-flex",
+                        alignItems: "center",
+                        gap: "5px",
+                        background:
+                          "linear-gradient(135deg, rgba(56, 189, 248, 0.14) 0%, rgba(24, 188, 156, 0.14) 100%)",
+                        border: "1px solid rgba(56, 189, 248, 0.35)",
+                        borderRadius: "20px",
+                        padding: "3px 10px",
+                        color: "#38bdf8",
+                        fontSize: "0.72rem",
+                        fontWeight: 700,
+                        letterSpacing: "0.03em",
+                      }}
+                    >
+                      {cert.metric}
+                    </span>
+                  </div>
+                )}
                 {cert.date && (
                   <p
                     style={{
                       color: "#94a3b8",
                       fontSize: "0.75rem",
-                      margin: 0,
+                      margin: "0.25rem 0 0",
                     }}
                   >
                     {cert.date}
