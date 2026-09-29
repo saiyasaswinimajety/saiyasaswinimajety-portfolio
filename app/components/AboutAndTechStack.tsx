@@ -11,7 +11,12 @@ export default function AboutAndTechStack() {
   const inView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section id="about" className="section-wrapper" ref={ref}>
+    <section
+      id="about"
+      className="section-wrapper"
+      ref={ref}
+      style={{ scrollMarginTop: "90px" }}
+    >
       <div className="section-inner">
         <SectionHeading title="About & Tech Stack" divider="light" />
 
