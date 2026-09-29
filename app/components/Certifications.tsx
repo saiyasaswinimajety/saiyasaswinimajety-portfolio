@@ -45,43 +45,16 @@ export default function Certifications() {
                 e.currentTarget.style.transform = "translateY(0)";
               }}
             >
-              {cert.icon ? (
-                <div
-                  style={{
-                    width: "60px",
-                    height: "60px",
-                    borderRadius: "14px",
-                    background: `linear-gradient(135deg, ${cert.iconColor || "var(--cyan)"}1f 0%, rgba(15,23,42,0.8) 100%)`,
-                    border: `1.5px solid ${cert.iconColor || "var(--cyan)"}44`,
-                    boxShadow: `0 0 20px ${cert.iconColor || "var(--cyan)"}22, inset 0 0 10px ${cert.iconColor || "var(--cyan)"}11`,
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    flexShrink: 0,
-                    transition: "all 0.25s ease",
-                  }}
-                >
-                  <i
-                    className={`fa ${cert.icon}`}
-                    style={{
-                      color: cert.iconColor || "var(--cyan)",
-                      fontSize: "1.65rem",
-                      filter: `drop-shadow(0 0 8px ${cert.iconColor || "var(--cyan)"}80)`,
-                    }}
-                  />
-                </div>
-              ) : cert.badge ? (
-                // eslint-disable-next-line @next/next/no-img-element
-                <img
-                  src={cert.badge}
-                  alt={cert.name}
-                  style={{
-                    height: "60px",
-                    width: "60px",
-                    objectFit: "contain",
-                  }}
-                />
-              ) : null}
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={cert.badge}
+                alt={cert.name}
+                style={{
+                  height: "72px",
+                  width: "72px",
+                  objectFit: "contain",
+                }}
+              />
               <div>
                 <p
                   style={{
