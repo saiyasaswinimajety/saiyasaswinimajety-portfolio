@@ -2,11 +2,11 @@
 import { useEffect, useState } from "react";
 
 const navLinks = [
-  { id: "about", label: "About & Skills" },
+  { id: "about", label: "About" },
   { id: "recognition", label: "Recognition" },
   { id: "experience", label: "Experience" },
   { id: "portfolio", label: "Projects" },
-  { id: "publications", label: "Patents & Research" },
+  { id: "publications", label: "Patents" },
   { id: "certifications", label: "Honors" },
   { id: "education", label: "Education" },
   { id: "contact", label: "Contact" },
@@ -16,9 +16,10 @@ const linkStyle: React.CSSProperties = {
   color: "#ffffff",
   textDecoration: "none",
   textTransform: "uppercase",
-  letterSpacing: "0.1em",
-  fontSize: "0.8rem",
+  letterSpacing: "0.08em",
+  fontSize: "0.75rem",
   fontWeight: 700,
+  whiteSpace: "nowrap",
   transition: "color 0.2s ease",
 };
 
