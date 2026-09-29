@@ -31,9 +31,12 @@ export default function SectionHeading({
         style={{
           fontFamily: "var(--font-montserrat), sans-serif",
           color: "var(--text)",
-          fontSize: "3rem",
+          fontSize: "clamp(1.4rem, 4.5vw, 2.5rem)",
           margin: 0,
           textTransform: "uppercase",
+          letterSpacing: "0.04em",
+          lineHeight: 1.2,
+          padding: "0 0.5rem",
         }}
       >
         {title}

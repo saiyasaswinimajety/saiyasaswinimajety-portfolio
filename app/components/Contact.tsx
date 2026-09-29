@@ -77,10 +77,10 @@ export default function Contact() {
             <h2
               style={{
                 fontFamily: "var(--font-montserrat), sans-serif",
-                fontSize: "clamp(2rem, 4vw, 2.75rem)",
+                fontSize: "clamp(1.4rem, 4vw, 2.5rem)",
                 color: "var(--text)",
                 textTransform: "uppercase",
-                lineHeight: 1.1,
+                lineHeight: 1.15,
                 margin: "0 0 1rem",
                 fontWeight: 800,
               }}

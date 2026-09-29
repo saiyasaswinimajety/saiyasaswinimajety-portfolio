@@ -29,6 +29,18 @@ html {
   scroll-padding-top: 80px;
 }
 
+@media (max-width: 900px) {
+  html {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 640px) {
+  html {
+    font-size: 15px;
+  }
+}
+
 body {
   width: 100%;
   min-width: 100%;

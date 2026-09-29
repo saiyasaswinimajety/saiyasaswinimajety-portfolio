@@ -177,7 +177,7 @@ export default function Recognition() {
                 background: "var(--card-bg)",
                 border: "1px solid rgba(56,189,248,0.3)",
                 borderRadius: "14px",
-                padding: "2.5rem 2.75rem",
+                padding: "2rem clamp(1.25rem, 4vw, 2.75rem)",
                 position: "relative",
                 overflow: "hidden",
                 boxShadow: "0 12px 32px rgba(0,0,0,0.4)",
@@ -190,6 +190,8 @@ export default function Recognition() {
                     display: "flex",
                     justifyContent: "space-between",
                     alignItems: "center",
+                    flexWrap: "wrap",
+                    gap: "0.5rem",
                     marginBottom: "1rem",
                   }}
                 >

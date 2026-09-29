@@ -88,10 +88,11 @@ export default function Hero() {
             className="text-uppercase"
             style={{
               fontFamily: "var(--font-montserrat), sans-serif",
-              fontSize: "clamp(1.8rem, 4.5vw, 2.75rem)",
-              letterSpacing: "0.08em",
+              fontSize: "clamp(1.35rem, 4.2vw, 2.6rem)",
+              letterSpacing: "0.04em",
               margin: "1.2rem 0 0.4rem",
               fontWeight: 800,
+              lineHeight: 1.15,
             }}
           >
             Sai Yasaswini Majety
@@ -127,8 +128,8 @@ export default function Hero() {
           <span
             style={{
               fontFamily: "var(--font-montserrat), sans-serif",
-              fontSize: "clamp(1rem, 2.5vw, 1.25rem)",
-              letterSpacing: "0.05em",
+              fontSize: "clamp(0.85rem, 2.2vw, 1.25rem)",
+              letterSpacing: "0.04em",
               color: "var(--cyan)",
               fontWeight: 600,
               display: "block",
