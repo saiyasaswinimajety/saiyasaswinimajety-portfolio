@@ -59,7 +59,7 @@ export function ScrollTimeline({ jobs }: { jobs: Job[] }) {
 
       {jobs.map((job, i) => (
         <div
-          key={job.company}
+          key={`${job.company}-${job.role}-${job.period}`}
           style={{
             display: "flex",
             gap: "2rem",
@@ -99,7 +99,7 @@ export function ScrollTimeline({ jobs }: { jobs: Job[] }) {
                 fontSize: "1rem",
                 fontFamily: "var(--font-montserrat), sans-serif",
                 lineHeight: 1.2,
-                maxWidth: "120px",
+                maxWidth: "150px",
                 display: "inline-block",
               }}
             >
@@ -108,9 +108,10 @@ export function ScrollTimeline({ jobs }: { jobs: Job[] }) {
             <span
               style={{
                 color: "var(--teal)",
-                fontSize: "0.75rem",
-                fontWeight: 500,
-                marginTop: "0.25rem",
+                fontSize: "0.78rem",
+                fontWeight: 600,
+                marginTop: "0.35rem",
+                fontFamily: "var(--font-montserrat), sans-serif",
               }}
             >
               {job.period}
