@@ -39,7 +39,7 @@ User-agent: JinaReader
 Allow: /
 
 # Structured LLM ingestion standard:
-# https://saiyasaswinimajety.github.io/llms.txt
-# https://saiyasaswinimajety.github.io/llm.txt
+# https://saiyasaswinimajety-portfolio.vercel.app/llms.txt
+# https://saiyasaswinimajety-portfolio.vercel.app/llm.txt
 
-Sitemap: https://saiyasaswinimajety.github.io/sitemap.xml
+Sitemap: https://saiyasaswinimajety-portfolio.vercel.app/sitemap.xml

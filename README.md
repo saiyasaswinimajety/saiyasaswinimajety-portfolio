@@ -3,7 +3,7 @@
 > **Senior Backend & Cloud Infrastructure Engineer**
 > Ex-Senior Software Engineer at Viasat (6+ Years) · Co-Inventor of Published Indian Patent 202541026299 · Commercial In-Flight Aviation Telemetry Platforms
 
-🌐 **Live Website**: [https://saiyasaswinimajety.github.io](https://saiyasaswinimajety.github.io)  
+🌐 **Live Website**: [https://saiyasaswinimajety-portfolio.vercel.app](https://saiyasaswinimajety-portfolio.vercel.app)  
 📜 **Indian Patent Verification**: [PatentAssist AI — App No. 202541026299](https://search.patentassist.ai/?mode=smart&office=ipo&q=Modular+Deep+Learning+Architecture+for+Cross-Domain+Transfer+and+Incremental+Learning&patent=202541026299)
 
 ---

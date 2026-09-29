@@ -9,7 +9,7 @@
 - **Current Location**: Houston, TX, United States (Open to Remote / Relocation)
 - **Email**: yasaswini7777@gmail.com
 - **Work Authorization**: Authorized to work in the US for any employer (H-4 EAD Approved, No Visa Sponsorship Needed)
-- **Portfolio**: https://saiyasaswinimajety.github.io
+- **Portfolio**: https://saiyasaswinimajety-portfolio.vercel.app
 - **LinkedIn**: https://www.linkedin.com/in/sai-yasaswini-majety-88548a125/
 - **GitHub**: https://github.com/saiyasaswinimajety
 - **Patent Listing**: https://search.patentassist.ai/?mode=smart&office=ipo&q=Modular+Deep+Learning+Architecture+for+Cross-Domain+Transfer+and+Incremental+Learning&patent=202541026299
