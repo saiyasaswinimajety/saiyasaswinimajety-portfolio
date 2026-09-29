@@ -66,4 +66,8 @@ export interface AboutCard {
 export interface CareerStat {
   value: string;
   label: string;
+  sublabel?: string;
+  icon?: string;
+  href?: string;
+  highlight?: boolean;
 }

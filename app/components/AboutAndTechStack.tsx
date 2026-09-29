@@ -268,62 +268,157 @@ export default function AboutAndTechStack() {
 
           {/* RIGHT: Stats */}
           <div
-            style={{ display: "flex", flexDirection: "column", gap: "2rem" }}
+            style={{ display: "flex", flexDirection: "column", gap: "1rem" }}
           >
-            <h3
-              style={{
-                fontFamily: "var(--font-montserrat), sans-serif",
-                color: "var(--text)",
-                fontSize: "1.25rem",
-                textTransform: "uppercase",
-                letterSpacing: "0.05em",
-                margin: "0 0 0.5rem",
-                fontWeight: 700,
-                textAlign: "center",
-              }}
-            >
-              Career Metrics
-            </h3>
-            {stats.map((s, i) => (
-              <motion.div
-                key={s.label}
-                initial={{ opacity: 0, x: 30 }}
-                animate={inView ? { opacity: 1, x: 0 } : {}}
-                transition={{ duration: 0.5, delay: 0.15 + i * 0.1 }}
+            <div style={{ textAlign: "center", marginBottom: "0.25rem" }}>
+              <span
                 style={{
-                  textAlign: "center",
-                  background: "var(--card-bg)",
-                  border: "1px solid rgba(255, 255, 255, 0.06)",
-                  borderRadius: "12px",
-                  padding: "1.25rem",
+                  fontSize: "0.72rem",
+                  color: "var(--cyan)",
+                  fontWeight: 700,
+                  textTransform: "uppercase",
+                  letterSpacing: "0.15em",
+                  display: "block",
+                  marginBottom: "4px",
                 }}
               >
-                <h4
-                  style={{
-                    color: "var(--cyan)",
-                    fontSize: "2.4rem",
-                    fontWeight: 800,
-                    margin: 0,
-                    fontFamily: "var(--font-montserrat), sans-serif",
-                    letterSpacing: "-0.02em",
-                  }}
-                >
-                  {s.value}
-                </h4>
-                <p
-                  style={{
-                    color: "#94a3b8",
-                    fontSize: "0.82rem",
-                    marginTop: "0.35rem",
-                    textTransform: "uppercase",
-                    letterSpacing: "0.06em",
-                    fontWeight: 600,
-                  }}
-                >
-                  {s.label}
-                </p>
-              </motion.div>
-            ))}
+                Track Record & Milestones
+              </span>
+              <h3
+                style={{
+                  fontFamily: "var(--font-montserrat), sans-serif",
+                  color: "var(--text)",
+                  fontSize: "1.25rem",
+                  textTransform: "uppercase",
+                  letterSpacing: "0.05em",
+                  margin: 0,
+                  fontWeight: 700,
+                }}
+              >
+                Career Metrics
+              </h3>
+            </div>
+
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "repeat(2, minmax(0, 1fr))",
+                gap: "0.75rem",
+              }}
+            >
+              {stats.map((s, i) => {
+                const CardWrapper = s.href ? "a" : "div";
+                return (
+                  <motion.div
+                    key={s.label}
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    animate={inView ? { opacity: 1, scale: 1 } : {}}
+                    transition={{ duration: 0.4, delay: 0.1 + i * 0.06 }}
+                    style={{ height: "100%" }}
+                  >
+                    <CardWrapper
+                      href={s.href}
+                      style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        textAlign: "center",
+                        height: "100%",
+                        minHeight: "130px",
+                        background:
+                          "linear-gradient(135deg, rgba(15, 23, 42, 0.85) 0%, rgba(9, 18, 39, 0.95) 100%)",
+                        border: s.highlight
+                          ? "1px solid rgba(56, 189, 248, 0.3)"
+                          : "1px solid rgba(255, 255, 255, 0.08)",
+                        borderRadius: "12px",
+                        padding: "1rem 0.65rem",
+                        textDecoration: "none",
+                        cursor: s.href ? "pointer" : "default",
+                        transition: "all 0.25s cubic-bezier(0.16, 1, 0.3, 1)",
+                        position: "relative",
+                        overflow: "hidden",
+                      }}
+                      onMouseEnter={(e) => {
+                        const target = e.currentTarget as HTMLElement;
+                        target.style.borderColor = "var(--cyan)";
+                        target.style.transform = "translateY(-3px)";
+                        target.style.boxShadow =
+                          "0 8px 24px -4px rgba(6, 182, 212, 0.25)";
+                      }}
+                      onMouseLeave={(e) => {
+                        const target = e.currentTarget as HTMLElement;
+                        target.style.borderColor = s.highlight
+                          ? "rgba(56, 189, 248, 0.3)"
+                          : "rgba(255, 255, 255, 0.08)";
+                        target.style.transform = "translateY(0)";
+                        target.style.boxShadow = "none";
+                      }}
+                    >
+                      {s.icon && (
+                        <div
+                          style={{
+                            width: "28px",
+                            height: "28px",
+                            borderRadius: "6px",
+                            background: "rgba(56, 189, 248, 0.12)",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            marginBottom: "0.45rem",
+                          }}
+                        >
+                          <i
+                            className={`fa ${s.icon}`}
+                            style={{ color: "var(--cyan)", fontSize: "0.85rem" }}
+                          />
+                        </div>
+                      )}
+                      <h4
+                        style={{
+                          color: "var(--cyan)",
+                          fontSize: "1.65rem",
+                          fontWeight: 800,
+                          margin: 0,
+                          fontFamily: "var(--font-montserrat), sans-serif",
+                          letterSpacing: "-0.02em",
+                          lineHeight: 1.15,
+                        }}
+                      >
+                        {s.value}
+                      </h4>
+                      <p
+                        style={{
+                          color: "#f1f5f9",
+                          fontSize: "0.78rem",
+                          marginTop: "0.35rem",
+                          marginBottom: 0,
+                          textTransform: "uppercase",
+                          letterSpacing: "0.04em",
+                          fontWeight: 700,
+                          lineHeight: 1.25,
+                        }}
+                      >
+                        {s.label}
+                      </p>
+                      {s.sublabel && (
+                        <span
+                          style={{
+                            color: "#94a3b8",
+                            fontSize: "0.68rem",
+                            marginTop: "0.25rem",
+                            fontWeight: 500,
+                            lineHeight: 1.2,
+                          }}
+                        >
+                          {s.sublabel}
+                        </span>
+                      )}
+                    </CardWrapper>
+                  </motion.div>
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>

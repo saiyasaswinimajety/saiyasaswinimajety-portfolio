@@ -1,10 +1,51 @@
 import type { AboutCard, CareerStat, Skill } from "@/app/types";
 
 export const stats: CareerStat[] = [
-  { value: "5.7+ Yrs", label: "Tenure @ Viasat Inc." },
-  { value: "99.99%", label: "Aviation Network SLA" },
-  { value: "1 Patent", label: "Modular DL (IPO Published)" },
-  { value: "0 Visa", label: "Sponsorship Needed (H-4 EAD)" },
+  {
+    value: "9",
+    label: "Appreciations",
+    sublabel: "CEO, Spotlight & Spot Awards",
+    icon: "fa-trophy",
+    href: "#recognition",
+    highlight: true,
+  },
+  {
+    value: "2",
+    label: "Promotions",
+    sublabel: "SWE I → SWE II → Senior SWE I",
+    icon: "fa-line-chart",
+    href: "#experience",
+    highlight: true,
+  },
+  {
+    value: "2",
+    label: "Performance Bonuses",
+    sublabel: "CEO Dankberg & Focal Awards",
+    icon: "fa-gift",
+    href: "#recognition",
+    highlight: true,
+  },
+  {
+    value: "5.7+ Yrs",
+    label: "Tenure @ Viasat",
+    sublabel: "Aviation Systems Engineering",
+    icon: "fa-building-o",
+    href: "#experience",
+  },
+  {
+    value: "1 Patent",
+    label: "Modular DL Research",
+    sublabel: "IPO Published (202541026299)",
+    icon: "fa-lightbulb-o",
+    href: "#publications",
+  },
+  {
+    value: "0 Visa",
+    label: "Sponsorship Needed",
+    sublabel: "Authorized to Work (H-4 EAD)",
+    icon: "fa-check-circle",
+    href: "#contact",
+  },
 ];
 
 export const cards: AboutCard[] = [
