@@ -68,7 +68,7 @@ export default function Hero() {
             }}
           >
             <Image
-              src="/img/avatar.jpg"
+              src="/img/profile.jpeg"
               alt="Sai Yasaswini Majety"
               width={180}
               height={180}

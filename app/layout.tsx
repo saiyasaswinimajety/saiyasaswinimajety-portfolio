@@ -141,7 +141,7 @@ export default function RootLayout({
               name: "Sai Yasaswini Majety",
               alternateName: ["Yasaswini Majety", "saiyasaswinimajety"],
               url: "https://saiyasaswini.me",
-              image: "https://saiyasaswini.me/img/avatar.jpg",
+              image: "https://saiyasaswini.me/img/profile.jpeg",
               email: "mailto:yasaswini7777@gmail.com",
               jobTitle: "Senior Backend & Cloud Infrastructure Engineer",
               description:
