@@ -13,7 +13,7 @@ const ROLES = [
 
 const socialLinks = [
   {
-    href: "https://www.linkedin.com/in/sai-yasaswini-majety-88548a125/",
+    href: "https://www.linkedin.com/in/saiyasaswinimajety/",
     icon: "fa-linkedin",
     label: "LinkedIn",
   },

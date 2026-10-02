@@ -4,7 +4,7 @@ export default function Footer() {
   const links = [
     { href: "https://github.com/saiyasaswinimajety", label: "GitHub" },
     {
-      href: "https://www.linkedin.com/in/sai-yasaswini-majety-88548a125/",
+      href: "https://www.linkedin.com/in/saiyasaswinimajety/",
       label: "LinkedIn",
     },
     {

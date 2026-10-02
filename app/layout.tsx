@@ -173,7 +173,7 @@ export default function RootLayout({
                 "Parameter-Efficient Adapter Architectures",
               ],
               sameAs: [
-                "https://www.linkedin.com/in/sai-yasaswini-majety-88548a125/",
+                "https://www.linkedin.com/in/saiyasaswinimajety/",
                 "https://github.com/saiyasaswinimajety",
                 "https://search.patentassist.ai/?mode=smart&office=ipo&q=Modular+Deep+Learning+Architecture+for+Cross-Domain+Transfer+and+Incremental+Learning&patent=202541026299",
                 "https://saiyasaswini.me",
