@@ -1,6 +1,6 @@
 # Sai Yasaswini Majety
 
-> Senior Backend & Cloud Infrastructure Engineer with 6+ years shipping production distributed systems, in-flight fleet telemetry engines, and cloud developer platforms. Ex-Senior Software Engineer - I at Viasat (5.7+ years continuous high-impact tenure across 4 progressive roles, 2 promotions, and 2 CEO Performance Bonuses) and co-inventor of published Indian Patent 202541026299. Legally authorized to work in the United States without visa sponsorship (H-4 EAD approved).
+> Senior Backend & Cloud Infrastructure Engineer with 6+ years shipping production distributed systems, in-flight fleet telemetry engines, and cloud developer platforms. Ex-Senior Software Engineer - I at Viasat (5.7+ years continuous high-impact tenure across 4 progressive roles, 2 promotions, and 2 CEO Performance Bonuses) and co-inventor of published Indian Patent 202541026299. Legally authorized to work in the United States without visa sponsorship.
 
 ## Identity & Professional Links
 
@@ -8,7 +8,7 @@
 - Role: Senior Backend & Cloud Infrastructure Engineer
 - Current Location: Houston, TX, United States (Open to Remote / Relocation)
 - Email: yasaswini7777@gmail.com
-- Work Authorization: Authorized to work in the US for any employer (H-4 EAD Approved, No Visa Sponsorship Needed)
+- Work Authorization: Authorized to work in the US for any employer. No visa sponsorship needed.
 - Portfolio: https://saiyasaswini.me
 - Alternate Domain: https://saiyasaswinimajety-github-io.vercel.app
 - LinkedIn: https://www.linkedin.com/in/saiyasaswinimajety/

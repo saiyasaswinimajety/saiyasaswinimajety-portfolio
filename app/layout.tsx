@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     template: "%s - Sai Yasaswini Majety",
   },
   description:
-    "Senior Backend & Cloud Infrastructure Engineer with 6+ years shipping high-availability distributed systems, in-flight fleet telemetry engines, and enterprise developer platforms. Ex-Senior Software Engineer at Viasat and co-inventor of published Indian Patent 202541026299. H-4 EAD approved.",
+    "Senior Backend & Cloud Infrastructure Engineer with 6+ years shipping high-availability distributed systems, in-flight fleet telemetry engines, and enterprise developer platforms. Ex-Senior Software Engineer at Viasat and co-inventor of published Indian Patent 202541026299. Open to work - no sponsorship required.",
   keywords: [
     "Sai Yasaswini Majety",
     "Yasaswini Majety",
@@ -51,7 +51,6 @@ export const metadata: Metadata = {
     "Modular Deep Learning",
     "Indian Patent 202541026299",
     "SASTRA University",
-    "H-4 EAD",
     "No Visa Sponsorship Needed",
   ],
   authors: [
@@ -81,7 +80,7 @@ export const metadata: Metadata = {
     title:
       "Sai Yasaswini Majety - Senior Backend & Cloud Infrastructure Engineer",
     description:
-      "Senior Backend & Cloud Infrastructure Engineer. Ex-Viasat (6 years), Co-Inventor of Published Indian Patent 202541026299, and architect of distributed in-flight fleet telemetry pipelines. H-4 EAD.",
+      "Senior Backend & Cloud Infrastructure Engineer. Ex-Viasat (6 years), Co-Inventor of Published Indian Patent 202541026299, and architect of distributed in-flight fleet telemetry pipelines.",
     images: [
       {
         url: "/og-image.png",
@@ -96,7 +95,7 @@ export const metadata: Metadata = {
     title:
       "Sai Yasaswini Majety - Senior Backend & Cloud Infrastructure Engineer",
     description:
-      "Senior Backend & Cloud Infrastructure Engineer. Ex-Viasat (6 years), Indian Patent 202541026299 Co-Inventor. H-4 EAD.",
+      "Senior Backend & Cloud Infrastructure Engineer. Ex-Viasat (6 years), Indian Patent 202541026299 Co-Inventor.",
     images: ["/og-image.png"],
   },
   robots: {
@@ -145,7 +144,7 @@ export default function RootLayout({
               email: "mailto:yasaswini7777@gmail.com",
               jobTitle: "Senior Backend & Cloud Infrastructure Engineer",
               description:
-                "Senior Backend & Cloud Infrastructure Engineer with 6+ years shipping production distributed systems, in-flight fleet telemetry engines, and enterprise developer platforms. Ex-Senior Software Engineer at Viasat and co-inventor of published Indian Patent 202541026299. H-4 EAD approved.",
+                "Senior Backend & Cloud Infrastructure Engineer with 6+ years shipping production distributed systems, in-flight fleet telemetry engines, and enterprise developer platforms. Ex-Senior Software Engineer at Viasat and co-inventor of published Indian Patent 202541026299.",
               address: {
                 "@type": "PostalAddress",
                 addressLocality: "Houston",

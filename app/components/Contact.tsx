@@ -144,8 +144,7 @@ export default function Contact() {
                     background: "#10B981",
                   }}
                 />
-                H-4 EAD (Authorized to work for any US employer without
-                sponsorship)
+                Authorized to work for any US employer without sponsorship
               </div>
             </div>
 

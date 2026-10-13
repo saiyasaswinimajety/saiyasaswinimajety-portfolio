@@ -21,7 +21,7 @@
 
 ## Core Sections
 
-1. **Hero**: Interactive title rotation (FlipWords), verified status pills (US Work Authorized - H-4 EAD, Open to Senior Backend / Cloud roles), studio avatar, and social links.
+1. **Hero**: Interactive title rotation (FlipWords), verified status pills (US Work Authorized, Open to Senior Backend / Cloud roles), studio avatar, and social links.
 2. **About & Tech Stack**: Core engineering pillars, interactive production skills matrix with live detail cards, and career metrics.
 3. **Recognition**: Verified commendation carousel featuring authentic Viasat leadership appreciation letters with high-resolution document inspection modals.
 4. **Experience**: Interactive vertical scroll timeline spanning Viasat (Senior Software Engineer, Software Engineer, Intern) and Independent Deep Learning Research.

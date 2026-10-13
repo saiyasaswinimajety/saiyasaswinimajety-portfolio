@@ -42,7 +42,7 @@ export const stats: CareerStat[] = [
   {
     value: "0 Visa",
     label: "Sponsorship Needed",
-    sublabel: "Authorized to Work (H-4 EAD)",
+    sublabel: "Authorized to Work (US)",
     icon: "fa-check-circle",
     href: "#contact",
   },

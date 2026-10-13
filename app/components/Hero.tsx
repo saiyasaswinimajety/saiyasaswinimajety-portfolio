@@ -232,7 +232,7 @@ export default function Hero() {
                 boxShadow: "0 0 8px #10B981",
               }}
             />
-            US Work Authorized (H-4 EAD) - No Sponsorship Required
+            US Work Authorized - No Sponsorship Required
           </span>
 
           <span
