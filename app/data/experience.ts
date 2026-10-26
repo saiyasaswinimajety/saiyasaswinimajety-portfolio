@@ -4,55 +4,57 @@ export const jobs: Job[] = [
   {
     company: "Independent Research",
     logo: "/img/companies/research.svg",
-    role: "AI Systems & Cloud Infrastructure Researcher",
+    role: "Lead Systems & Cloud Infrastructure Researcher",
     period: "Mar 2024 – Present",
     location: "Houston, TX (Remote)",
-    desc: "Co-authored and published Indian Patent 202541026299 for modular deep learning architectures while engineering high-throughput RAG microservices and cloud infrastructure automation.",
+    desc: "Architected asynchronous microservices in Java 21, Spring Boot 3.2, and Python alongside interactive full stack exploratory portals in React 18 and TypeScript with Dockerized AWS deployments.",
     stack:
-      "Python, FastAPI, Docker, Terraform, AWS ECS/EKS, LiteLLM, Vector Stores",
+      "Java 21, Spring Boot 3.2, React 18, TypeScript, PostgreSQL 16, Redis, Docker, AWS ECS Fargate, Terraform",
     overview:
-      "Conducting applied systems research across modular neural architectures, retrieval-augmented generation (RAG), and cloud-native infrastructure automation during US permanent relocation.",
+      "Conducting applied systems research across high-throughput distributed microservices, React single-page analytics interfaces, and cloud-native infrastructure automation.",
     highlights: [
       {
-        label: "Patent Co-Inventor",
+        label: "Java 21 & Spring Boot Microservices",
         detail:
-          "Published patent 'Modular Deep Learning Architecture for Cross-Domain Transfer and Incremental Learning' (IPO App. 202541026299). Designed dynamic adapter routing to eliminate catastrophic forgetting.",
+          "Architected asynchronous microservice APIs and distributed caching proxies using Java 21, Spring Boot 3.2, and Redis, achieving sub-15ms P99 latency while sustaining 12,000+ req/sec under peak loads.",
       },
       {
-        label: "GenAI & RAG Microservices",
+        label: "React 18 & TypeScript Portals",
         detail:
-          "Engineered high-throughput RAG microservices using FastAPI, LiteLLM proxy routing, semantic vector caching, and Dockerized deployment workflows.",
+          "Developed full stack exploratory portals in React 18 and TypeScript with TanStack Query and dynamic vector similarity dashboards, validated with Playwright and Jest suites.",
       },
       {
         label: "Declarative Cloud Automation",
         detail:
-          "Authored infrastructure-as-code modules in Terraform for automated multi-tier cloud deployments with strict security boundary validation.",
+          "Architected containerized microservices deployments on AWS (ECS Fargate, RDS PostgreSQL 16, S3, IAM) utilizing Terraform Infrastructure-as-Code and automated GitHub Actions CI/CD pipelines.",
       },
     ],
     metrics: [
-      "1 Published Patent (IPO 202541026299)",
-      "80% compute reduction in incremental fine-tuning",
+      "12,000+ req/sec sustained throughput",
+      "Sub-15ms P99 caching latency",
       "No Visa Sponsorship Needed",
     ],
     stackList: [
-      "Python",
-      "FastAPI",
+      "Java 21",
+      "Spring Boot 3.2",
+      "React 18",
+      "TypeScript",
+      "PostgreSQL 16",
+      "Redis",
       "Docker",
-      "Terraform",
       "AWS ECS",
-      "LiteLLM",
-      "Vector Databases",
+      "Terraform",
     ],
     problemStatement:
-      "Enterprise deep learning models suffer from catastrophic forgetting and prohibitive retraining costs when transferring across domains, while LLM application pipelines face high latency and lack semantic caching.",
+      "High-throughput enterprise API gateways face severe tail latency degradation under burst traffic, while distributed teams lack real-time observability portals and declarative infrastructure automation.",
     solutions: [
       {
-        title: "Modular Transfer Mechanism (MTM)",
-        desc: "Designed parameter-efficient adapter projections that isolate domain gradients while keeping foundational weights frozen.",
+        title: "High-Throughput Reactive Microservices",
+        desc: "Engineered non-blocking request pipelines and Redis caching proxies in Java 21 and Spring Boot, bounding P99 latency to sub-15ms.",
       },
       {
-        title: "Semantic Vector Caching Layer",
-        desc: "Built low-latency vector cache in FastAPI, bounding P95 response times to sub-20ms for recurring enterprise semantic queries.",
+        title: "Component-Driven React 18 Observability",
+        desc: "Built responsive single-page portals in React 18 and TypeScript, providing operators with live latency heatmaps and real-time telemetry streams.",
       },
     ],
   },

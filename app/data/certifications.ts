@@ -9,12 +9,11 @@ export interface Certification {
 
 export const certifications: Certification[] = [
   {
-    name: "Indian Patent Published: Modular Deep Learning Architecture",
-    issuer: "Indian Patent Office (IPO 202541026299)",
-    badge: "/img/badges/patent.png",
-    metric: "Parameter-Efficient Adapter Routing",
-    url: "https://search.patentassist.ai/?mode=smart&office=ipo&q=Modular+Deep+Learning+Architecture+for+Cross-Domain+Transfer+and+Incremental+Learning&patent=202541026299",
-    date: "March 2025",
+    name: "Enterprise Full Stack Systems Architecture",
+    issuer: "Viasat Engineering & Platform Operations",
+    badge: "/img/badges/architecture.png",
+    metric: "Java 21, Spring Boot & React Microservices",
+    date: "2023",
   },
   {
     name: "Dean's Merit Scholarship: Academic Distinction",

@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Montserrat, Lato } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
-import { publications } from "@/app/data";
 import "./globals.css";
 
 const montserrat = Montserrat({
@@ -20,36 +19,35 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://saiyasaswini.me"),
   title: {
     default:
-      "Sai Yasaswini Majety - Senior Backend & Cloud Infrastructure Engineer",
+      "Sai Yasaswini Majety - Senior Full Stack Developer | Enterprise Cloud & Distributed Systems",
     template: "%s - Sai Yasaswini Majety",
   },
   description:
-    "Senior Backend & Cloud Infrastructure Engineer with 6+ years shipping high-availability distributed systems, in-flight fleet telemetry engines, and enterprise developer platforms. Ex-Senior Software Engineer at Viasat and co-inventor of published Indian Patent 202541026299. Open to work - no sponsorship required.",
+    "Senior Full Stack Developer with 6+ years shipping mission-critical distributed systems, high-throughput Java 21 / Spring Boot microservices, React 18 & TypeScript portals, and enterprise cloud architectures. Ex-Senior Software Engineer at Viasat (6 years, 2 CEO Bonuses).",
   keywords: [
     "Sai Yasaswini Majety",
     "Yasaswini Majety",
     "saiyasaswinimajety",
-    "Viasat Senior Software Engineer",
+    "Senior Full Stack Developer",
+    "Senior Full Stack Engineer",
     "Senior Backend Engineer",
-    "Cloud Infrastructure Engineer",
-    "Distributed Systems Engineer",
-    "Commercial Aviation Connectivity",
-    "In-Flight Telemetry Ingestion",
+    "Java 21",
+    "Spring Boot 3.2",
+    "React 18",
+    "TypeScript",
+    "PostgreSQL 16",
+    "Temporal SDK",
     "AWS ECS",
-    "AWS RDS",
-    "PostgreSQL",
-    "FastAPI",
-    "Django",
-    "Python",
-    "Golang",
+    "AWS RDS Multi-AZ",
+    "Flyway",
     "Docker",
     "Kubernetes",
-    "HashiCorp Vault",
-    "TLS Certificate Automation",
+    "Microservices",
+    "Distributed Systems",
+    "Viasat Senior Software Engineer",
+    "Commercial Aviation Connectivity",
     "OAuth 2.0",
-    "Okta",
-    "Modular Deep Learning",
-    "Indian Patent 202541026299",
+    "Okta MSAL",
     "SASTRA University",
     "No Visa Sponsorship Needed",
   ],
@@ -78,24 +76,24 @@ export const metadata: Metadata = {
     url: "https://saiyasaswini.me",
     siteName: "Sai Yasaswini Majety - Portfolio",
     title:
-      "Sai Yasaswini Majety - Senior Backend & Cloud Infrastructure Engineer",
+      "Sai Yasaswini Majety - Senior Full Stack Developer | Enterprise Cloud & Distributed Systems",
     description:
-      "Senior Backend & Cloud Infrastructure Engineer. Ex-Viasat (6 years), Co-Inventor of Published Indian Patent 202541026299, and architect of distributed in-flight fleet telemetry pipelines.",
+      "Senior Full Stack Developer with 6+ years shipping mission-critical distributed systems, Java 21 / Spring Boot microservices, React 18 portals, and high-availability cloud platforms. Ex-Viasat (6 years, 2 CEO Bonuses).",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Sai Yasaswini Majety - Senior Backend & Cloud Infrastructure Engineer",
+        alt: "Sai Yasaswini Majety - Senior Full Stack Developer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title:
-      "Sai Yasaswini Majety - Senior Backend & Cloud Infrastructure Engineer",
+      "Sai Yasaswini Majety - Senior Full Stack Developer | Enterprise Cloud & Distributed Systems",
     description:
-      "Senior Backend & Cloud Infrastructure Engineer. Ex-Viasat (6 years), Indian Patent 202541026299 Co-Inventor.",
+      "Senior Full Stack Developer. Ex-Viasat (6 years, 2 CEO Bonuses), architect of high-availability Java 21 / Spring Boot microservices, React 18 portals, and cloud platforms.",
     images: ["/og-image.png"],
   },
   robots: {
@@ -142,9 +140,9 @@ export default function RootLayout({
               url: "https://saiyasaswini.me",
               image: "https://saiyasaswini.me/img/profile.jpeg",
               email: "mailto:yasaswini7777@gmail.com",
-              jobTitle: "Senior Backend & Cloud Infrastructure Engineer",
+              jobTitle: "Senior Full Stack Developer",
               description:
-                "Senior Backend & Cloud Infrastructure Engineer with 6+ years shipping production distributed systems, in-flight fleet telemetry engines, and enterprise developer platforms. Ex-Senior Software Engineer at Viasat and co-inventor of published Indian Patent 202541026299.",
+                "Senior Full Stack Developer with 6+ years shipping mission-critical distributed systems, Java 21 / Spring Boot microservices, React 18 & TypeScript enterprise web applications, and high-availability cloud platforms. Ex-Senior Software Engineer at Viasat.",
               address: {
                 "@type": "PostalAddress",
                 addressLocality: "Houston",
@@ -153,28 +151,26 @@ export default function RootLayout({
               },
               knowsLanguage: ["English", "Telugu", "Hindi"],
               knowsAbout: [
-                "Backend Engineering",
+                "Full Stack Development",
+                "Java 21",
+                "Spring Boot 3.2",
+                "React 18",
+                "TypeScript",
+                "PostgreSQL 16",
+                "Temporal SDK",
                 "Distributed Systems",
                 "Cloud Infrastructure",
                 "AWS Cloud Architecture (ECS, RDS, CloudFormation)",
                 "In-Flight Telemetry Ingestion",
-                "FastAPI",
-                "Django",
-                "Python",
-                "Golang",
-                "PostgreSQL",
+                "Flyway Schema Migrations",
                 "Docker",
                 "Kubernetes",
-                "HashiCorp Vault",
                 "OAuth 2.0 & Okta",
                 "TLS/SSL Automation",
-                "Modular Deep Learning",
-                "Parameter-Efficient Adapter Architectures",
               ],
               sameAs: [
                 "https://www.linkedin.com/in/saiyasaswinimajety/",
                 "https://github.com/saiyasaswinimajety",
-                "https://search.patentassist.ai/?mode=smart&office=ipo&q=Modular+Deep+Learning+Architecture+for+Cross-Domain+Transfer+and+Incremental+Learning&patent=202541026299",
                 "https://saiyasaswini.me",
               ],
               worksFor: {
@@ -205,7 +201,7 @@ export default function RootLayout({
                   "@type": "Organization",
                   name: "Independent Applied Systems Research",
                   description:
-                    "AI Systems & Cloud Infrastructure Researcher - Dynamic Adapter Architectures, Patent Co-Inventor",
+                    "Lead Systems Researcher - Full Stack & Distributed Microservices Architecture",
                 },
               ],
             }),
@@ -221,36 +217,13 @@ export default function RootLayout({
               name: "Sai Yasaswini Majety",
               url: "https://saiyasaswini.me",
               description:
-                "Portfolio of Sai Yasaswini Majety - Senior Backend & Cloud Infrastructure Engineer. Ex-Viasat (6 years) and co-inventor of published Indian Patent 202541026299.",
+                "Portfolio of Sai Yasaswini Majety - Senior Full Stack Developer. Ex-Viasat (6 years, 2 CEO Bonuses).",
               author: {
                 "@type": "Person",
                 name: "Sai Yasaswini Majety",
                 url: "https://saiyasaswini.me",
               },
             }),
-          }}
-        />
-        {/* Schema.org Publications / Patents */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(
-              publications.map((pub) => ({
-                "@context": "https://schema.org",
-                "@type":
-                  pub.type === "patent" ? "CreativeWork" : "ScholarlyArticle",
-                name: pub.title,
-                author: pub.authors.split(",").map((a) => ({
-                  "@type": "Person",
-                  name: a.trim(),
-                })),
-                datePublished: pub.year,
-                publisher: pub.publisher
-                  ? { "@type": "Organization", name: pub.publisher }
-                  : undefined,
-                url: pub.links[0]?.url,
-              })),
-            ),
           }}
         />
       </head>

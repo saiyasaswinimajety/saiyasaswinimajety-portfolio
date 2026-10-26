@@ -6,7 +6,6 @@ const navLinks = [
   { id: "recognition", label: "Recognition" },
   { id: "experience", label: "Experience" },
   { id: "portfolio", label: "Projects" },
-  { id: "publications", label: "Patents" },
   { id: "certifications", label: "Honors" },
   { id: "education", label: "Education" },
   { id: "contact", label: "Contact" },
@@ -104,14 +103,14 @@ export default function Navbar() {
           ))}
           <li>
             <a
-              href="https://search.patentassist.ai/?mode=smart&office=ipo&q=Modular+Deep+Learning+Architecture+for+Cross-Domain+Transfer+and+Incremental+Learning&patent=202541026299"
+              href="/resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               style={{
                 ...linkStyle,
                 color: "var(--cyan)",
                 border: "1px solid var(--cyan)",
-                padding: "6px 12px",
+                padding: "6px 14px",
                 borderRadius: "4px",
               }}
               onMouseEnter={(e) => {
@@ -121,7 +120,7 @@ export default function Navbar() {
                 e.currentTarget.style.background = "transparent";
               }}
             >
-              Patent 202541026299
+              Resume PDF
             </a>
           </li>
         </ul>
@@ -152,24 +151,15 @@ export default function Navbar() {
             borderTop: "1px solid rgba(255,255,255,0.1)",
           }}
         >
-          {[
-            ...navLinks,
-            { id: "patent", label: "Indian Patent 202541026299" },
-          ].map((link) => (
+          {navLinks.map((link) => (
             <a
               key={link.id}
-              href={
-                link.id === "patent"
-                  ? "https://search.patentassist.ai/?mode=smart&office=ipo&q=Modular+Deep+Learning+Architecture+for+Cross-Domain+Transfer+and+Incremental+Learning&patent=202541026299"
-                  : `#${link.id}`
-              }
-              target={link.id === "patent" ? "_blank" : undefined}
-              rel={link.id === "patent" ? "noopener noreferrer" : undefined}
+              href={`#${link.id}`}
               style={{
                 ...linkStyle,
                 display: "block",
                 padding: "0.65rem 0",
-                color: link.id === "patent" ? "var(--cyan)" : "#ffffff",
+                color: "#ffffff",
               }}
               onClick={() => setOpen(false)}
             >

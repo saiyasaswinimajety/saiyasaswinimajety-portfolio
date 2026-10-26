@@ -7,10 +7,7 @@ export default function Footer() {
       href: "https://www.linkedin.com/in/saiyasaswinimajety/",
       label: "LinkedIn",
     },
-    {
-      href: "https://search.patentassist.ai/?mode=smart&office=ipo&q=Modular+Deep+Learning+Architecture+for+Cross-Domain+Transfer+and+Incremental+Learning&patent=202541026299",
-      label: "Indian Patent 202541026299",
-    },
+    { href: "/resume.pdf", label: "Resume PDF" },
     { href: "mailto:yasaswini7777@gmail.com", label: "Contact" },
   ];
 

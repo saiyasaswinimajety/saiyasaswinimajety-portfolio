@@ -33,11 +33,11 @@ export const stats: CareerStat[] = [
     href: "#experience",
   },
   {
-    value: "1 Patent",
-    label: "Modular DL Research",
-    sublabel: "IPO Published (202541026299)",
-    icon: "fa-lightbulb-o",
-    href: "#publications",
+    value: "Full Stack",
+    label: "Java 21 & React 18",
+    sublabel: "Spring Boot 3.2 & TypeScript",
+    icon: "fa-code",
+    href: "#experience",
   },
   {
     value: "0 Visa",
@@ -65,36 +65,60 @@ export const cards: AboutCard[] = [
     desc: "Engineered automated Jenkins & Groovy pipelines, reducing deployment cycle times by 65% with strict pre-release regression gates.",
   },
   {
-    icon: "fa-lightbulb-o",
-    title: "Deep Learning & Patent Research",
-    desc: "Co-inventor on published Indian Patent 202541026299 for modular deep learning architectures with parameter-efficient adapter routing.",
+    icon: "fa-code",
+    title: "Enterprise Full-Stack Architecture",
+    desc: "Production web applications and transactional REST microservices engineered with Java 21, Spring Boot 3.2, React 18, TypeScript, and PostgreSQL 16 with zero-downtime schema migrations.",
   },
 ];
 
 export const SKILLS: Skill[] = [
   {
-    name: "Python",
-    label: "Python",
+    name: "Java & Spring",
+    label: "Java 21 & Spring Boot",
+    color: "#F97316",
+    icon: "fa-coffee",
+    shortDescription:
+      "Spring Boot 3.2, Spring Data JPA, Hibernate, Temporal SDK, Spring Security",
+  },
+  {
+    name: "React & TS",
+    label: "React 18 & TypeScript",
     color: "#38BDF8",
     icon: "fa-code",
     shortDescription:
-      "FastAPI, Flask, Django, Pytest, Pandas, asynchronous microservices",
+      "React 18, TypeScript, TanStack Query, Next.js, Zod, RouteGuard security",
+  },
+  {
+    name: "Databases",
+    label: "PostgreSQL & Flyway",
+    color: "#EC4899",
+    icon: "fa-database",
+    shortDescription:
+      "PostgreSQL 16, idempotent Flyway DDL migrations, immutable audit triggers, Redis",
   },
   {
     name: "AWS",
-    label: "AWS Cloud",
+    label: "AWS Cloud & IaC",
     color: "#F59E0B",
     icon: "fa-cloud",
     shortDescription:
-      "ECS, RDS Multi-AZ, CloudFormation, CloudWatch, S3, IAM, VPC",
+      "ECS Fargate, RDS Multi-AZ, Terraform, CloudFormation, CloudWatch, S3, IAM",
+  },
+  {
+    name: "Python",
+    label: "Python & Microservices",
+    color: "#06B6D4",
+    icon: "fa-terminal",
+    shortDescription:
+      "FastAPI, Django, Pytest, Pandas, asynchronous event streaming pipelines",
   },
   {
     name: "Kubernetes",
-    label: "Kubernetes & Docker",
+    label: "Docker & Kubernetes",
     color: "#3B82F6",
     icon: "fa-cubes",
     shortDescription:
-      "Containerized microservices, pod lifecycles, Docker multi-stage builds",
+      "Containerized microservices, OpenShift, multi-stage builds, pod lifecycles",
   },
   {
     name: "DevOps",
@@ -102,38 +126,14 @@ export const SKILLS: Skill[] = [
     color: "#10B981",
     icon: "fa-cogs",
     shortDescription:
-      "Jenkins scripted pipelines, Groovy, automated regression suites, GitOps",
+      "Jenkins Groovy pipelines, GitHub Actions, automated regression suites, GitOps",
   },
   {
-    name: "Go",
-    label: "Go (Golang)",
-    color: "#06B6D4",
-    icon: "fa-terminal",
-    shortDescription:
-      "High-concurrency microservices, network telemetry endpoints, CLI tools",
-  },
-  {
-    name: "Networking",
-    label: "Network Security & SD-WAN",
+    name: "Security",
+    label: "Identity & Zero-Trust",
     color: "#8B5CF6",
     icon: "fa-shield",
     shortDescription:
-      "Aruba Controllers, Palo Alto firewalls, Silver Peak SD-WAN, OAuth 2.0, SSL/TLS",
-  },
-  {
-    name: "Databases",
-    label: "Databases & Storage",
-    color: "#EC4899",
-    icon: "fa-database",
-    shortDescription:
-      "AWS RDS MySQL/PostgreSQL, zero-downtime schema migrations, MariaDB, Redis",
-  },
-  {
-    name: "AI & RAG",
-    label: "GenAI & Modular DL",
-    color: "#A855F7",
-    icon: "fa-brain",
-    shortDescription:
-      "Dynamic adapter routing, parameter-efficient transfer, RAG pipelines, LiteLLM",
+      "OAuth 2.0 / SAML, Okta MSAL, TLS/SSL automation, immutable audit logging",
   },
 ];

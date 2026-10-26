@@ -22,12 +22,6 @@ const socialLinks = [
     color: "var(--text)",
   },
   {
-    href: "https://search.patentassist.ai/?mode=smart&office=ipo&q=Modular+Deep+Learning+Architecture+for+Cross-Domain+Transfer+and+Incremental+Learning&patent=202541026299",
-    icon: "fa-certificate",
-    label: "Indian Patent 202541026299",
-    color: "var(--cyan)",
-  },
-  {
     href: "mailto:yasaswini7777@gmail.com",
     icon: "fa-envelope",
     label: "Email",

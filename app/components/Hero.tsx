@@ -4,11 +4,11 @@ import Image from "next/image";
 import { FlipWords } from "@/app/components/ui/FlipWords";
 
 const ROLES = [
-  "6+ Years Shipping Production Distributed Systems",
-  "Co-Inventor: Published Indian Patent 202541026299",
+  "Senior Full Stack Developer (Java 21 & React 18)",
+  "Enterprise Spring Boot 3.2 Microservices Architect",
+  "High-Availability Cloud & Distributed Systems",
   "Ex-Senior Software Engineer @ Viasat (6 Years)",
-  "High-Scale Fleet Telemetry @ 25M+ Events/Day",
-  "Zero-Downtime Microservices & Cloud Architecture",
+  "PostgreSQL 16 & Resilient Workflow Orchestration",
 ];
 
 const socialLinks = [
@@ -26,11 +26,6 @@ const socialLinks = [
     href: "mailto:yasaswini7777@gmail.com",
     icon: "fa-envelope",
     label: "Email",
-  },
-  {
-    href: "https://search.patentassist.ai/?mode=smart&office=ipo&q=Modular+Deep+Learning+Architecture+for+Cross-Domain+Transfer+and+Incremental+Learning&patent=202541026299",
-    icon: "fa-certificate",
-    label: "Indian Patent 202541026299",
   },
 ];
 
@@ -149,12 +144,11 @@ export default function Hero() {
               color: "#cbd5e1",
             }}
           >
-            Senior Backend & Cloud Infrastructure Engineer with 6+ years
-            shipping high-availability distributed systems, in-flight fleet
-            telemetry engines, and enterprise developer platforms. Ex-Senior
-            Software Engineer at Viasat and co-inventor of published Indian
-            Patent 202541026299 in parameter-efficient modular deep learning
-            architectures.
+            Senior Full Stack Developer with 6+ years shipping mission-critical
+            distributed systems, enterprise Spring Boot microservices,
+            component-driven React and TypeScript portals, and high-availability
+            cloud platforms. Ex-Senior Software Engineer at Viasat delivering
+            99.999% availability SLAs across global commercial aviation fleets.
           </p>
         </motion.div>
 
@@ -252,7 +246,7 @@ export default function Hero() {
             }}
           >
             <i className="fa fa-briefcase" style={{ fontSize: "0.85rem" }} />
-            Open to Senior Backend & Cloud Infrastructure Roles
+            Open to Senior Full Stack Developer & Enterprise Cloud Roles
           </span>
         </motion.div>
 

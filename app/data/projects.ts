@@ -58,19 +58,19 @@ export const projects: Project[] = [
     github: "https://github.com/saiyasaswinimajety/enterprise-llm-gateway",
   },
   {
-    name: "Modular Deep Learning Adapter Framework (Indian Patent 202541026299)",
+    name: "Clinical Logistics & Regulated Workflow Orchestration Platform",
     description:
-      "Engineered a novel parameter-efficient adapter framework enabling foundation models to transfer representations dynamically across disparate cross-domain distributions without catastrophic forgetting. Published with the Indian Patent Office (IPO). Features inter-layer routing adapters and catastrophic forgetting mitigation algorithms.",
+      "Full-stack enterprise healthcare logistics platform engineered in Java 21 (Spring Boot 3.2) and React 18 (TypeScript). Features multi-step clinical wizard workflows, Temporal SDK saga state orchestration, dual-layer immutable database audit triggers in PostgreSQL 16, and TanStack Query state hydration with sub-100ms dashboard responsiveness.",
     tags: [
-      { name: "pytorch", color: "#38BDF8" },
-      { name: "modular-dl", color: "#38BDF8" },
-      { name: "patent", color: "#9b59b6" },
-      { name: "transfer-learning", color: "#38BDF8" },
-      { name: "huggingface", color: "#94A3B8" },
+      { name: "java-21", color: "#38BDF8" },
+      { name: "spring-boot-3", color: "#38BDF8" },
+      { name: "react-18", color: "#38BDF8" },
+      { name: "typescript", color: "#38BDF8" },
+      { name: "postgresql-16", color: "#38BDF8" },
+      { name: "temporal", color: "#94A3B8" },
+      { name: "docker", color: "#10B981" },
     ],
-    image: "/img/patent/patent-page.png",
-    deploy:
-      "https://search.patentassist.ai/?mode=smart&office=ipo&q=Modular+Deep+Learning+Architecture+for+Cross-Domain+Transfer+and+Incremental+Learning&patent=202541026299",
+    image: "/img/slideshow/slide_1_hero_cloud_platform.png",
   },
   {
     name: "CandEx 2.0: Internal Developer Platform & Documentation Hub",
