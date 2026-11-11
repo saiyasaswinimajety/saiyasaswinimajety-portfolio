@@ -4,11 +4,11 @@ import Image from "next/image";
 import { FlipWords } from "@/app/components/ui/FlipWords";
 
 const ROLES = [
-  "Senior Full Stack Developer (Java 21 & React 18)",
-  "Enterprise Spring Boot 3.2 Microservices Architect",
+  "Senior Full Stack Developer (Python 3.12, FastAPI & React 18)",
+  "Senior Full Stack Developer @ Intuit (Contractor)",
+  "Enterprise AI, RAG & Asynchronous Microservices",
+  "Ex-Senior Software Engineer @ Viasat (6 Years Full-Time)",
   "High-Availability Cloud & Distributed Systems",
-  "Ex-Senior Software Engineer @ Viasat (6 Years)",
-  "PostgreSQL 16 & Resilient Workflow Orchestration",
 ];
 
 const socialLinks = [
@@ -144,11 +144,13 @@ export default function Hero() {
               color: "#cbd5e1",
             }}
           >
-            Senior Full Stack Developer with 6+ years shipping mission-critical
-            distributed systems, enterprise Spring Boot microservices,
-            component-driven React and TypeScript portals, and high-availability
-            cloud platforms. Ex-Senior Software Engineer at Viasat delivering
-            99.999% availability SLAs across global commercial aviation fleets.
+            Senior Full Stack Developer with 8+ years shipping mission-critical
+            distributed systems, high-performance Python &amp; FastAPI
+            microservices, component-driven React and TypeScript portals, and
+            high-availability cloud platforms. Current Senior Full Stack
+            Developer (Contractor) at Intuit and Ex-Senior Software Engineer at
+            Viasat delivering 99.999% availability SLAs across global commercial
+            aviation fleets.
           </p>
         </motion.div>
 
@@ -246,7 +248,7 @@ export default function Hero() {
             }}
           >
             <i className="fa fa-briefcase" style={{ fontSize: "0.85rem" }} />
-            Open to Senior Full Stack Developer & Enterprise Cloud Roles
+            Open to Senior Full Stack Developer &amp; Enterprise Cloud Roles
           </span>
         </motion.div>
 

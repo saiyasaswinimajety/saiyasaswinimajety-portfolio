@@ -2,6 +2,14 @@ import type { AboutCard, CareerStat, Skill } from "@/app/types";
 
 export const stats: CareerStat[] = [
   {
+    value: "8+ Yrs",
+    label: "Total Experience",
+    sublabel: "Intuit & Viasat Engineering",
+    icon: "fa-line-chart",
+    href: "#experience",
+    highlight: true,
+  },
+  {
     value: "9",
     label: "Appreciations",
     sublabel: "CEO, Spotlight & Spot Awards",
@@ -12,17 +20,9 @@ export const stats: CareerStat[] = [
   {
     value: "2",
     label: "Promotions",
-    sublabel: "SWE I → SWE II → Senior SWE I",
-    icon: "fa-line-chart",
+    sublabel: "SWE I -> SWE II -> Senior SWE I",
+    icon: "fa-arrow-up",
     href: "#experience",
-    highlight: true,
-  },
-  {
-    value: "2",
-    label: "Performance Bonuses",
-    sublabel: "CEO Dankberg & Focal Awards",
-    icon: "fa-gift",
-    href: "#recognition",
     highlight: true,
   },
   {
@@ -34,8 +34,8 @@ export const stats: CareerStat[] = [
   },
   {
     value: "Full Stack",
-    label: "Java 21 & React 18",
-    sublabel: "Spring Boot 3.2 & TypeScript",
+    label: "Python & React 18",
+    sublabel: "FastAPI, Next.js & TS",
     icon: "fa-code",
     href: "#experience",
   },
@@ -67,18 +67,18 @@ export const cards: AboutCard[] = [
   {
     icon: "fa-code",
     title: "Enterprise Full-Stack Architecture",
-    desc: "Production web applications and transactional REST microservices engineered with Java 21, Spring Boot 3.2, React 18, TypeScript, and PostgreSQL 16 with zero-downtime schema migrations.",
+    desc: "Production web applications, AI-powered RAG pipelines, and transactional microservices engineered with Python 3.12, FastAPI, React 18, Next.js, TypeScript, and AWS with sub-200ms semantic search.",
   },
 ];
 
 export const SKILLS: Skill[] = [
   {
-    name: "Java & Spring",
-    label: "Java 21 & Spring Boot",
-    color: "#F97316",
-    icon: "fa-coffee",
+    name: "Python & FastAPI",
+    label: "Python 3.12 & FastAPI",
+    color: "#06B6D4",
+    icon: "fa-terminal",
     shortDescription:
-      "Spring Boot 3.2, Spring Data JPA, Hibernate, Temporal SDK, Spring Security",
+      "FastAPI, Django, Flask, Pydantic, Celery, SQLAlchemy, asynchronous event pipelines",
   },
   {
     name: "React & TS",
@@ -86,15 +86,15 @@ export const SKILLS: Skill[] = [
     color: "#38BDF8",
     icon: "fa-code",
     shortDescription:
-      "React 18, TypeScript, TanStack Query, Next.js, Zod, RouteGuard security",
+      "React 18, Next.js, TypeScript, Tailwind CSS, TanStack Query, Redux, WebSockets",
   },
   {
-    name: "Databases",
-    label: "PostgreSQL & Flyway",
-    color: "#EC4899",
+    name: "Enterprise AI",
+    label: "AI Systems & RAG",
+    color: "#8B5CF6",
     icon: "fa-database",
     shortDescription:
-      "PostgreSQL 16, idempotent Flyway DDL migrations, immutable audit triggers, Redis",
+      "FAISS, Hugging Face Transformers, vector embeddings, prompt engineering, PII guardrails",
   },
   {
     name: "AWS",
@@ -105,12 +105,12 @@ export const SKILLS: Skill[] = [
       "ECS Fargate, RDS Multi-AZ, Terraform, CloudFormation, CloudWatch, S3, IAM",
   },
   {
-    name: "Python",
-    label: "Python & Microservices",
-    color: "#06B6D4",
-    icon: "fa-terminal",
+    name: "Databases",
+    label: "PostgreSQL & Redis",
+    color: "#EC4899",
+    icon: "fa-database",
     shortDescription:
-      "FastAPI, Django, Pytest, Pandas, asynchronous event streaming pipelines",
+      "PostgreSQL, Redis distributed caching, Flyway schema migrations, MySQL Multi-AZ",
   },
   {
     name: "Kubernetes",
@@ -118,7 +118,7 @@ export const SKILLS: Skill[] = [
     color: "#3B82F6",
     icon: "fa-cubes",
     shortDescription:
-      "Containerized microservices, OpenShift, multi-stage builds, pod lifecycles",
+      "Containerized microservices, multi-stage builds, pod lifecycles, Docker Compose",
   },
   {
     name: "DevOps",
@@ -126,14 +126,14 @@ export const SKILLS: Skill[] = [
     color: "#10B981",
     icon: "fa-cogs",
     shortDescription:
-      "Jenkins Groovy pipelines, GitHub Actions, automated regression suites, GitOps",
+      "GitHub Actions, Jenkins Groovy pipelines, automated regression suites, GitOps",
   },
   {
     name: "Security",
     label: "Identity & Zero-Trust",
-    color: "#8B5CF6",
+    color: "#F97316",
     icon: "fa-shield",
     shortDescription:
-      "OAuth 2.0 / SAML, Okta MSAL, TLS/SSL automation, immutable audit logging",
+      "OAuth 2.0 / SAML, Okta MSAL, TLS/SSL automation, automated PII sanitization filters",
   },
 ];

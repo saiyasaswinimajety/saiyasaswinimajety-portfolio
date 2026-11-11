@@ -19,11 +19,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://saiyasaswini.me"),
   title: {
     default:
-      "Sai Yasaswini Majety - Senior Full Stack Developer | Enterprise Cloud & Distributed Systems",
+      "Sai Yasaswini Majety - Senior Full Stack Developer | Enterprise AI & Distributed Systems",
     template: "%s - Sai Yasaswini Majety",
   },
   description:
-    "Senior Full Stack Developer with 6+ years shipping mission-critical distributed systems, high-throughput Java 21 / Spring Boot microservices, React 18 & TypeScript portals, and enterprise cloud architectures. Ex-Senior Software Engineer at Viasat (6 years, 2 CEO Bonuses).",
+    "Senior Full Stack Developer with 8+ years shipping mission-critical distributed systems, high-performance Python 3.12 / FastAPI microservices, React 18 & TypeScript portals, and enterprise cloud architectures. Senior Full Stack Developer (Contractor) at Intuit and Ex-Senior Software Engineer at Viasat (6 years, 2 CEO Bonuses).",
   keywords: [
     "Sai Yasaswini Majety",
     "Yasaswini Majety",
@@ -31,15 +31,19 @@ export const metadata: Metadata = {
     "Senior Full Stack Developer",
     "Senior Full Stack Engineer",
     "Senior Backend Engineer",
-    "Java 21",
-    "Spring Boot 3.2",
+    "Intuit",
+    "Intuit Senior Full Stack Developer",
+    "Python 3.12",
+    "FastAPI",
     "React 18",
+    "Next.js",
     "TypeScript",
-    "PostgreSQL 16",
-    "Temporal SDK",
+    "Enterprise AI",
+    "RAG",
+    "FAISS",
+    "PostgreSQL",
     "AWS ECS",
     "AWS RDS Multi-AZ",
-    "Flyway",
     "Docker",
     "Kubernetes",
     "Microservices",
@@ -47,7 +51,6 @@ export const metadata: Metadata = {
     "Viasat Senior Software Engineer",
     "Commercial Aviation Connectivity",
     "OAuth 2.0",
-    "Okta MSAL",
     "SASTRA University",
     "No Visa Sponsorship Needed",
   ],
@@ -76,9 +79,9 @@ export const metadata: Metadata = {
     url: "https://saiyasaswini.me",
     siteName: "Sai Yasaswini Majety - Portfolio",
     title:
-      "Sai Yasaswini Majety - Senior Full Stack Developer | Enterprise Cloud & Distributed Systems",
+      "Sai Yasaswini Majety - Senior Full Stack Developer | Enterprise AI & Distributed Systems",
     description:
-      "Senior Full Stack Developer with 6+ years shipping mission-critical distributed systems, Java 21 / Spring Boot microservices, React 18 portals, and high-availability cloud platforms. Ex-Viasat (6 years, 2 CEO Bonuses).",
+      "Senior Full Stack Developer with 8+ years shipping mission-critical distributed systems, Python & FastAPI microservices, React 18 portals, and high-availability cloud platforms. Senior Full Stack Developer (Contractor) at Intuit and Ex-Viasat (6 years, 2 CEO Bonuses).",
     images: [
       {
         url: "/og-image.png",
@@ -91,9 +94,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Sai Yasaswini Majety - Senior Full Stack Developer | Enterprise Cloud & Distributed Systems",
+      "Sai Yasaswini Majety - Senior Full Stack Developer | Enterprise AI & Distributed Systems",
     description:
-      "Senior Full Stack Developer. Ex-Viasat (6 years, 2 CEO Bonuses), architect of high-availability Java 21 / Spring Boot microservices, React 18 portals, and cloud platforms.",
+      "Senior Full Stack Developer with 8+ years experience. Senior Full Stack Developer (Contractor) at Intuit and Ex-Viasat (6 years, 2 CEO Bonuses), architect of high-availability Python/FastAPI microservices, React 18 portals, and cloud platforms.",
     images: ["/og-image.png"],
   },
   robots: {
@@ -142,7 +145,7 @@ export default function RootLayout({
               email: "mailto:yasaswini7777@gmail.com",
               jobTitle: "Senior Full Stack Developer",
               description:
-                "Senior Full Stack Developer with 6+ years shipping mission-critical distributed systems, Java 21 / Spring Boot microservices, React 18 & TypeScript enterprise web applications, and high-availability cloud platforms. Ex-Senior Software Engineer at Viasat.",
+                "Senior Full Stack Developer with 8+ years shipping mission-critical distributed systems, Python & FastAPI microservices, React 18 & TypeScript enterprise web applications, and high-availability cloud platforms. Senior Full Stack Developer (Contractor) at Intuit and Ex-Senior Software Engineer at Viasat.",
               address: {
                 "@type": "PostalAddress",
                 addressLocality: "Houston",
@@ -152,17 +155,21 @@ export default function RootLayout({
               knowsLanguage: ["English", "Telugu", "Hindi"],
               knowsAbout: [
                 "Full Stack Development",
-                "Java 21",
-                "Spring Boot 3.2",
+                "Python 3.12",
+                "FastAPI",
                 "React 18",
+                "Next.js",
                 "TypeScript",
-                "PostgreSQL 16",
-                "Temporal SDK",
+                "Enterprise AI",
+                "RAG Pipelines",
+                "FAISS",
+                "PostgreSQL",
+                "Redis",
+                "Celery",
                 "Distributed Systems",
                 "Cloud Infrastructure",
-                "AWS Cloud Architecture (ECS, RDS, CloudFormation)",
+                "AWS Cloud Architecture (ECS, RDS, S3)",
                 "In-Flight Telemetry Ingestion",
-                "Flyway Schema Migrations",
                 "Docker",
                 "Kubernetes",
                 "OAuth 2.0 & Okta",
@@ -175,7 +182,7 @@ export default function RootLayout({
               ],
               worksFor: {
                 "@type": "Organization",
-                name: "Independent Applied Systems Research",
+                name: "Intuit",
               },
               alumniOf: [
                 {
@@ -193,9 +200,15 @@ export default function RootLayout({
               workExperience: [
                 {
                   "@type": "Organization",
+                  name: "Intuit",
+                  description:
+                    "Senior Full Stack Developer (Contractor) - Enterprise AI, RAG Semantic Search, FastAPI Microservices, React 18 Dashboards",
+                },
+                {
+                  "@type": "Organization",
                   name: "Viasat Inc.",
                   description:
-                    "Senior Software Engineer - Commercial In-Flight Fleet Telemetry, TLS/SSL Automation Daemon, Zero-Downtime Multi-AZ Cloud Migration",
+                    "Senior Software Engineer (Full-Time Direct Hire) - Commercial In-Flight Fleet Telemetry, TLS/SSL Automation Daemon, Zero-Downtime Multi-AZ Cloud Migration",
                 },
                 {
                   "@type": "Organization",
@@ -217,7 +230,7 @@ export default function RootLayout({
               name: "Sai Yasaswini Majety",
               url: "https://saiyasaswini.me",
               description:
-                "Portfolio of Sai Yasaswini Majety - Senior Full Stack Developer. Ex-Viasat (6 years, 2 CEO Bonuses).",
+                "Portfolio of Sai Yasaswini Majety - Senior Full Stack Developer. Senior Full Stack Developer (Contractor) at Intuit and Ex-Viasat (6 years, 2 CEO Bonuses).",
               author: {
                 "@type": "Person",
                 name: "Sai Yasaswini Majety",

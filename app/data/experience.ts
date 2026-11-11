@@ -2,10 +2,82 @@ import type { Job } from "@/app/types";
 
 export const jobs: Job[] = [
   {
+    company: "Intuit",
+    logo: "/img/companies/intuit.svg",
+    role: "Senior Full Stack Developer (Contractor)",
+    period: "Sep 2024 - Present",
+    location: "Mountain View, CA (Remote)",
+    desc: "Architected and delivered scalable backend microservices, asynchronous RESTful APIs, and responsive enterprise dashboards using Python (FastAPI, Flask), React 18, Next.js, and TypeScript. Implemented enterprise Retrieval-Augmented Generation (RAG) pipelines with FAISS and Hugging Face transformer embeddings for sub-200ms semantic document retrieval, integrated automated PII sanitization filters, and built real-time WebSocket monitoring dashboards.",
+    stack:
+      "Python 3.12, FastAPI, Flask, React 18, Next.js, TypeScript, PostgreSQL, Redis, Celery, FAISS, Hugging Face, Docker, AWS (ECS, S3, RDS), GitHub Actions, Tailwind CSS",
+    overview:
+      "Driving full stack development and enterprise AI integration for financial intelligence workflows. Architecting high-throughput FastAPI microservices, contextual RAG pipelines over complex tax and policy documentation, dynamic React analytics interfaces, and asynchronous background worker queues.",
+    highlights: [
+      {
+        label: "Asynchronous Microservices & REST APIs",
+        detail:
+          "Engineered high-throughput backend microservices and asynchronous RESTful APIs using Python 3.12 (FastAPI, Flask) and Pydantic, supporting concurrent financial data processing with sub-25ms response latencies.",
+      },
+      {
+        label: "Enterprise AI & RAG Retrieval Pipelines",
+        detail:
+          "Implemented production Retrieval-Augmented Generation (RAG) pipelines using FAISS vector indexing and Hugging Face transformer embeddings, delivering sub-200ms semantic search across enterprise tax, compliance, and policy documentation.",
+      },
+      {
+        label: "Automated PII Protection & LLM Guardrails",
+        detail:
+          "Architected LLM integration layers with contextual chunking, structured prompt validation, and automated PII redaction filters ensuring regulatory privacy compliance before vector indexing.",
+      },
+      {
+        label: "Component-Driven React 18 & Next.js Portals",
+        detail:
+          "Developed dynamic single-page web applications and responsive operational dashboards in React 18, Next.js, TypeScript, and Tailwind CSS with real-time WebSocket state management.",
+      },
+      {
+        label: "Distributed Task Pipelines & Database Optimization",
+        detail:
+          "Designed asynchronous background worker queues using Celery and Redis for non-blocking document ingestion and optimized PostgreSQL queries via SQLAlchemy connection pooling, cutting query latency by 35%.",
+      },
+    ],
+    metrics: [
+      "Sub-200ms semantic retrieval across enterprise document repositories",
+      "35% reduction in PostgreSQL database query latency",
+      "85%+ automated test coverage across critical backend APIs and UI components",
+      "No Visa Sponsorship Required (Authorized to Work in US)",
+    ],
+    stackList: [
+      "Python 3.12",
+      "FastAPI",
+      "React 18",
+      "Next.js",
+      "TypeScript",
+      "PostgreSQL",
+      "Redis",
+      "Celery",
+      "FAISS",
+      "Hugging Face",
+      "Docker",
+      "AWS ECS",
+      "Tailwind CSS",
+    ],
+    problemStatement:
+      "Enterprise financial operations required unified semantic search and real-time document intelligence across distributed tax and policy data repositories, while preserving strict PII compliance and sub-second SLA latency.",
+    solutions: [
+      {
+        title: "Enterprise RAG Semantic Search Architecture",
+        desc: "Integrated FAISS vector database with Hugging Face sentence transformers and asynchronous FastAPI endpoints, enabling precise contextual search with automated PII redaction.",
+      },
+      {
+        title: "Real-Time WebSocket Operational Dashboard",
+        desc: "Constructed dynamic React 18 dashboard streaming background Celery worker execution states and financial data ingestion telemetry via bi-directional WebSockets.",
+      },
+    ],
+  },
+  {
     company: "Independent Research",
     logo: "/img/companies/research.svg",
     role: "Lead Systems & Cloud Infrastructure Researcher",
-    period: "Mar 2024 – Present",
+    period: "Mar 2024 - Present",
     location: "Houston, TX (Remote)",
     desc: "Architected asynchronous microservices in Java 21, Spring Boot 3.2, and Python alongside interactive full stack exploratory portals in React 18 and TypeScript with Dockerized AWS deployments.",
     stack:
@@ -61,8 +133,8 @@ export const jobs: Job[] = [
   {
     company: "Viasat Inc.",
     logo: "/img/companies/viasat.svg",
-    role: "Senior Software Engineer - I (Backend & Cloud Infrastructure)",
-    period: "Jan 2023 – Feb 2024",
+    role: "Senior Software Engineer - I (Full-Time Direct Hire)",
+    period: "Jan 2023 - Feb 2024",
     location: "Chennai, India",
     desc: "Spearheaded Commercial Aviation ground-to-air microservices and real-time fleet telemetry, scaling platform availability to 99.99% across 1,000+ commercial aircraft (Delta Air Lines). Executed zero-downtime Multi-AZ RDS MySQL upgrades and automated enterprise TLS/SSL certificate lifecycles across 500+ edge gateways.",
     stack:
@@ -95,12 +167,12 @@ export const jobs: Job[] = [
       "99.99% in-flight network availability across 1,000+ aircraft",
       "500+ edge endpoints automated with zero-outage certificate renewals",
       "Viasat Spotlight Award & Architecture Commendation recipient",
-      "Promoted to Senior Software Engineer - I (Effective Jan 1, 2023)",
+      "Promoted to Senior Software Engineer - I (Full-Time Direct Hire)",
     ],
     recognition: [
       "Viasat Spotlight Award: Automated Certificate Lifecycle Management",
       "Architecture Commendation: Decoupled OAuth 2.0 Gateway Routing",
-      "Senior SWE - I Promotion (Effective Jan 1, 2023)",
+      "Senior SWE - I Promotion (Full-Time Direct Hire)",
     ],
     stackList: [
       "Python",
@@ -119,91 +191,97 @@ export const jobs: Job[] = [
       "Commercial in-flight broadband networks require sub-second access control, strict compliance, multi-aircraft telemetry synchronization, and zero downtime across global satellite transitions.",
     solutions: [
       {
-        title: "Automated Certificate Lifecycle Manager",
-        desc: "Engineered automated daemon validating SSL/TLS certificates and rotating credentials before expiration, eliminating manual operational bottlenecks.",
+        title: "Edge Resilience & Telemetry Buffering",
+        desc: "Engineered Python store-and-forward edge queueing services caching operational metrics locally on the aircraft during orbital handoffs.",
       },
       {
-        title: "Multi-AZ Database Schema Migration Engine",
-        desc: "Designed rolling schema migration strategy for AWS RDS MySQL clusters, preserving data consistency across continuous active flights.",
+        title: "Automated Certificate Lifecycle Daemon",
+        desc: "Developed a Python daemon automating TLS/SSL certificate verification, revocation, and renewal across 500+ edge gateways.",
       },
     ],
   },
   {
     company: "Viasat Inc.",
     logo: "/img/companies/viasat.svg",
-    role: "Software Engineer II (Cloud Platform & API Microservices)",
-    period: "Jan 2021 – Dec 2022",
+    role: "Software Engineer II (Full-Time Direct Hire)",
+    period: "Jan 2021 - Dec 2022",
     location: "Chennai, India",
-    desc: "Accelerated multi-region cloud deployment velocity by 65% (from 4 hours to 45 minutes MTTR) by authoring modular AWS CloudFormation IaC templates and scripted Jenkins Groovy CI/CD pipelines. Elevated automated test coverage across billing and telemetry paths to >92% with Pytest.",
+    desc: "Led microservices API design, cloud migration, and developer productivity tooling across Viasat cloud platform. Won CEO Performance Award (2021) for outstanding contribution to platform reliability.",
     stack:
-      "Python, AWS CloudFormation, Jenkins, Groovy, Docker, Pytest, AWS RDS, Linux, Bash",
+      "Python, Django, AWS, Docker, Kubernetes, PostgreSQL, Jenkins, Groovy, Redis, OpenAPI, REST APIs",
     overview:
-      "Promoted to Software Engineer II to drive cloud infrastructure automation, CI/CD pipeline modernization, and automated test reliability across Commercial Air platform microservices.",
+      "Designed and deployed cloud-native backend services, unified internal developer platforms, and built distributed observability pipelines across multi-team engineering orgs.",
     highlights: [
       {
-        label: "Infrastructure as Code (IaC) Velocity",
+        label: "Distributed API Microservices",
         detail:
-          "Accelerated deployment velocity by 65% (from 4 hours to 45 minutes MTTR) by authoring modular AWS CloudFormation IaC templates and declarative Jenkins CI/CD pipelines.",
+          "Architected 15+ containerized Python microservices on AWS ECS, implementing clean domain-driven architecture and asynchronous message queues.",
       },
       {
-        label: "Automated Regression Test Harnesses",
+        label: "Internal Developer Platform (CandEx 2.0)",
         detail:
-          "Elevated automated test coverage across critical billing, telemetry, and authentication paths from 60% to >92% by architecting automated Pytest suites and mock network failure harnesses.",
+          "Scaled centralized talent platform to 500+ internal users with Sphinx full-text search indexing 10,000+ profiles with sub-180ms query times.",
       },
       {
-        label: "Database High Availability & Disaster Recovery",
+        label: "CI/CD & Pipeline Modernization",
         detail:
-          "Engineered automated database backup validation, failover health checks, and cross-region replication monitoring across enterprise AWS RDS instances.",
+          "Reduced build and deployment cycle times by 40% across 50+ Jenkins nodes by authoring reusable Groovy pipeline shared libraries.",
+      },
+      {
+        label: "CEO Recognition & Focal Bonus",
+        detail:
+          "Selected by executive leadership for the 2021 Viasat CEO Discretionary Performance Award for high-impact infrastructure delivery.",
       },
     ],
     metrics: [
-      "65% reduction in deployment cycle latency (4 hours to 45 mins)",
-      ">92% automated test coverage across critical microservices",
-      "Awarded 2021 Mark Dankberg CEO & Chairman Performance Bonus",
-      "Promoted to Software Engineer II (Effective Jan 1, 2021)",
+      "15+ production microservices deployed to AWS ECS",
+      "40% reduction in CI/CD pipeline verification latency",
+      "Viasat CEO Discretionary Performance Award (2021)",
+      "Promoted to Software Engineer II (Full-Time Direct Hire)",
     ],
     recognition: [
-      "2021 Chairman & CEO Mark Dankberg Performance Award",
-      "Software Engineer II Promotion (Effective Jan 1, 2021)",
+      "Viasat CEO Discretionary Performance Award (2021)",
+      "Executive Merit Promotion to Software Engineer II (Full-Time Direct Hire)",
     ],
     stackList: [
       "Python",
-      "AWS CloudFormation",
+      "Django",
+      "AWS",
+      "Docker",
+      "Kubernetes",
+      "PostgreSQL",
       "Jenkins",
       "Groovy",
-      "Docker",
-      "Pytest",
-      "AWS RDS",
-      "Linux",
-      "Bash",
+      "Redis",
+      "OpenAPI",
     ],
     problemStatement:
-      "Manual infrastructure provisioning and fragmented test suites created 4-hour deployment release delays and regression risks across multi-region commercial air deployments.",
+      "Engineering teams faced fragmented developer tooling, unstandardized deployment pipelines, and high onboarding friction across distributed microservices.",
     solutions: [
       {
-        title: "Modular CloudFormation Orchestration",
-        desc: "Designed standardized infrastructure-as-code templates with parameter-driven multi-environment parity between staging and production.",
+        title: "Standardized CI/CD Shared Libraries",
+        desc: "Authored modular Jenkins Groovy libraries incorporating automated security scanning, container image signing, and deployment smoke tests.",
       },
       {
-        title: "Automated Failure Simulation Test Harness",
-        desc: "Authored Pytest harnesses injecting network dropouts, rate-limiting, and bad authentication handshakes to validate edge microservice resilience.",
+        title: "Unified Service Registry & API Docs",
+        desc: "Built automated OpenAPI documentation aggregator enabling real-time schema validation and interactive API exploration for engineering teams.",
       },
     ],
   },
   {
     company: "Viasat Inc.",
     logo: "/img/companies/viasat.svg",
-    role: "Software Engineer I (Distributed Systems & Tooling Automation)",
-    period: "Jun 2018 – Dec 2020",
+    role: "Software Engineer I (Full-Time Direct Hire)",
+    period: "Jun 2018 - Dec 2020",
     location: "Chennai, India",
-    desc: "Built Commercial Air PAT (Pipeline & Telemetry Observability) dashboard in Flask and React, reducing release cycle verification latency by 40%. Standardized pre-merge Groovy regression pipelines across 50+ Jenkins nodes, and optimized CandEx 2.0 full-text search in Sphinx & Django (<180ms queries).",
+    desc: "Built full-stack internal developer tools, pipeline automation, and automated test frameworks. Won 1st Place in the Viasat Global IoT Hackathon (2019) among 24 international engineering teams.",
     stack:
-      "Python, Flask, React, Jenkins, Groovy, Robot Framework, MariaDB, Docker, Linux",
+      "Python, Flask, React, Jenkins, Groovy, Robot Framework, MariaDB, Linux, Bash",
     overview:
       "Joined Viasat full-time following campus recruitment. Engineered telemetry dashboards, automated pre-merge regression verification suites, and contributed to internal talent search platforms.",
     highlights: [
       {
-        label: "Pipeline Observability (PAT)",
+        label: "Pipeline Observability Dashboard (PAT)",
         detail:
           "Engineered real-time pipeline observability dashboard in React and Python Flask aggregating telemetry, build execution times, and open defect trends across 50+ Jenkins nodes.",
       },
@@ -227,11 +305,11 @@ export const jobs: Job[] = [
       "40% reduction in release cycle verification latency",
       "100+ automated regression test scenarios per release candidate",
       "1st Place Winner - Viasat IoT Global Hackathon (2019)",
-      "Full-Time Campus SWE I Appointment (Jun 4, 2018)",
+      "Full-Time Campus SWE I Direct Hire Appointment (Jun 4, 2018)",
     ],
     recognition: [
       "1st Place Winner: Viasat IoT Global Hackathon (2019)",
-      "Full-Time SWE I Appointment (Jun 4, 2018)",
+      "Full-Time SWE I Direct Hire Appointment (Jun 4, 2018)",
     ],
     stackList: [
       "Python",
@@ -259,8 +337,8 @@ export const jobs: Job[] = [
   {
     company: "Viasat Inc.",
     logo: "/img/companies/viasat.svg",
-    role: "Software Engineer Intern (Talent Systems & Search Automation)",
-    period: "Jan 2018 – May 2018",
+    role: "Software Engineer Intern (Full-Time Direct Hire Internship)",
+    period: "Jan 2018 - May 2018",
     location: "Chennai, India",
     desc: "Architected and deployed 'CandEx 2.0', an automated enterprise recruitment and candidate evaluation platform adopted across Viasat HR and technical hiring teams with Sphinx full-text search across 10,000+ candidate profiles.",
     stack:
@@ -287,7 +365,7 @@ export const jobs: Job[] = [
     metrics: [
       "Sub-second search (<180ms) across 10,000+ candidate resumes",
       "Formal Leadership Appreciation Award for CandEx 2.0 delivery",
-      "Converted to Full-Time Software Engineer I upon graduation",
+      "Converted to Full-Time Software Engineer I Direct Hire upon graduation",
     ],
     recognition: ["Viasat Leadership Appreciation Award: CandEx 2.0 Platform"],
     stackList: [

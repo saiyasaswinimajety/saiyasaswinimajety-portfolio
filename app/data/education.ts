@@ -71,7 +71,7 @@ export const degrees: Degree[] = [
     achievements: [
       "Dean's Merit Scholarship Recipient (2016–2017, Top 3% of cohort)",
       "Graduated First Class with Distinction (CGPA 8.2 / 10.0)",
-      "1st Place Winner — Viasat IoT Hackathon (Inflight telemetry & smart monitoring)",
+      "1st Place Winner - Viasat IoT Hackathon (Inflight telemetry & smart monitoring)",
     ],
   },
 ];

@@ -2,7 +2,7 @@
 import createGlobe, { type Arc, type Marker } from "cobe";
 import { useEffect, useRef, useState } from "react";
 
-// City markers — career and infrastructure footprint across tech hubs
+// City markers - career and infrastructure footprint across tech hubs
 const MARKERS: Marker[] = [
   { location: [32.7157, -117.1611], size: 0.06 }, // San Diego
   { location: [33.1194, -117.0861], size: 0.055 }, // Carlsbad
@@ -17,7 +17,7 @@ const MARKERS: Marker[] = [
   { location: [-33.8688, 151.2093], size: 0.04 }, // Sydney
 ];
 
-// Animated arcs — global infrastructure data flow
+// Animated arcs - global infrastructure data flow
 const ARCS: Arc[] = [
   { from: [33.1194, -117.0861], to: [40.7128, -74.006] },
   { from: [32.7157, -117.1611], to: [51.5074, -0.1278] },

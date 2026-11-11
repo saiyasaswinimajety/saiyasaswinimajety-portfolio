@@ -18,8 +18,8 @@ export const publications: Publication[] = [
     type: "patent",
     title:
       "Modular Deep Learning Architecture for Cross-Domain Transfer and Incremental Learning",
-    venue: "Indian Patent Office — Application No. 202541026299",
-    publisher: "Government of India — The Patent Office Journal No. 13/2025",
+    venue: "Indian Patent Office - Application No. 202541026299",
+    publisher: "Government of India - The Patent Office Journal No. 13/2025",
     year: "2025",
     authors: "Sai Likhith Kanuparthi, Sai Yasaswini Majety (Co-Inventors)",
     topic:

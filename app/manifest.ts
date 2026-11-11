@@ -2,10 +2,10 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Sai Yasaswini Majety — Senior Backend & Cloud Infrastructure Engineer",
+    name: "Sai Yasaswini Majety - Senior Full Stack Developer",
     short_name: "Yasaswini Majety",
     description:
-      "Senior Backend & Cloud Infrastructure Engineer with 6+ years shipping high-availability distributed systems, in-flight fleet telemetry engines, and enterprise developer platforms. Ex-Viasat.",
+      "Senior Full Stack Developer with 8+ years shipping high-availability distributed systems, Python & FastAPI microservices, React 18 portals, and cloud platforms. Intuit & Ex-Viasat.",
     start_url: "/",
     display: "standalone",
     background_color: "#091227",
